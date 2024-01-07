@@ -1,0 +1,15 @@
+@use "@styles/abstracts" as *;
+
+.even-columns {
+    display: grid;
+
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+
+    row-gap: var(--grid-row-gap, var(--grid-gap, var(--space-xl, 1rem)));
+    column-gap: var(--grid-column-gap, var(--grid-gap, var(--space-xl, 1rem)));
+
+    @media (width <= $breakpoint-medium) {
+        grid-auto-flow: row;
+    }
+}

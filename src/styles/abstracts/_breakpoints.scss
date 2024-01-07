@@ -1,0 +1,8 @@
+/* breakpoints */
+$breakpoint-small: 700px;
+$breakpoint-medium: 870px;
+$breakpoint-large: 870px;
+
+$breakpoint-phone: #{$breakpoint-small};
+$breakpoint-desktop: #{$breakpoint-medium};
+$breakpoint-tablet: #{$breakpoint-large};

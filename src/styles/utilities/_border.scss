@@ -1,0 +1,12 @@
+.border-sm {
+    border: 0.5em solid var(--border-color, var(--clr-darkest, black));
+}
+.border-md {
+    border: 1em solid var(--border-color, var(--clr-darkest, black));
+}
+.border-lg {
+    border: 1.5em solid var(--border-color, var(--clr-darkest, black));
+}
+.border-xl {
+    border: 2em solid var(--border-color, var(--clr-darkest, black));
+}

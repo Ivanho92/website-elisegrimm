@@ -1,0 +1,85 @@
+@use "@styles/abstracts" as *;
+
+:root {
+    // Colors
+    --clr-primary: #25a49d; /* Light Sea Green - Primary color */
+    --clr-primary-shade: #1f8782; /* Darkened primary color */
+    --clr-primary-tint: #2abfb8; /* Brightened primary color */
+
+    --clr-secondary: #4d4962; /* English Violet - Secondary color */
+    --clr-secondary-shade: #403c52; /* Darkened secondary color */
+    --clr-secondary-tint: #56516e; /* Brightened secondary color */
+
+    --clr-darkest: #161a19; /* Darkest variation - Used for primary text */
+    --clr-dark: #243332; /* Dark variation - Used for supporting text */
+    --clr-medium: #1e4d4a; /* Medium variation - Used for non-decorative borders */
+    --clr-light: #cae0df; /* Light variation - Used for decorative borders */
+    --clr-lightest: #f2fafa; /* Lightest variation - Used as an alternative background */
+
+    --clr-darkest-neutral: #171717; /* Grayscale Darkest neutral variation */
+    --clr-dark-neutral: #3b3b3b; /* Grayscale Dark neutral variation */
+    --clr-medium-neutral: #808080; /* Grayscale Medium neutral variation */
+    --clr-light-neutral: #e0e0e0; /* Grayscale Light neutral variation */
+    --clr-lightest-neutral: #fafafa; /* Grayscale Lightest neutral variation */
+
+    --clr-tiffany-blue: #99ddc6;
+    --clr-mint-cream: #f4fcfa;
+    --clr-alice-blue: #eaf5f9;
+    --clr-tea-rose: #ffd0ca;
+
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-transparent: transparent;
+
+    // Spacing
+    --space-0: 0px;
+    --space-px: 1px;
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-xxl: 80px;
+
+    // Font size
+    --fs-200: 12px;
+    --fs-300: 14px;
+    --fs-400: 18px;
+    --fs-500: 22px;
+    --fs-600: 28px;
+    --fs-700: 35px;
+    --fs-800: 44px;
+    --fs-900: 55px;
+    --fs-base: var(--fs-400);
+    --fs-title: var(--fs-900);
+
+    // Font weight
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    // Font families
+    --ff-base: "Aller", "Open Sans", sans-serif;
+    --ff-heading: "Spartan", Sans-serif;
+
+    // Font measure
+    --measure-base: 70ch;
+    --measure-compact: 24ch;
+
+    // Letter spacing
+    --letter-spacing-base: 0em;
+    --letter-spacing-compact: -1.1px;
+
+    // Line height
+    --line-height-none: 1;
+    --line-height-auto: auto;
+    --line-height-heading: 1.1;
+    --line-height-base: 1.7;
+
+    // Breakpoints
+    --breakpoint-small: $breakpoint-small;
+    --breakpoint-phone: $breakpoint-small;
+    --breakpoint-medium: $breakpoint-medium;
+    --breakpoint-tablet: $breakpoint-medium;
+    --breakpoint-large: $breakpoint-desktop;
+    --breakpoint-desktop: $breakpoint-desktop;
+}

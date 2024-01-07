@@ -1,0 +1,58 @@
+@use "@styles/abstracts" as *;
+
+.header {
+    --section-padding: var(--space-md);
+
+    details {
+        cursor: pointer;
+    }
+
+    @media (width >= $breakpoint-small) {
+        details {
+            display: none;
+        }
+
+        //details[open] > summary {
+        //  display: none;
+        //}
+    }
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    text-decoration: none;
+
+    &:is(:hover, :focus) {
+        color: var(--clr-primary);
+    }
+}
+
+.header__contact-details {
+    --flex-justify: space-evenly;
+
+    @media (width < $breakpoint-small) {
+        --flex-justify: flex-start;
+        --flex-row-gap: var(--space-lg);
+        flex-direction: column;
+
+        &[data-device="desktop"] {
+            display: none;
+        }
+    }
+
+    & .separator {
+        width: 1px;
+        height: 100%;
+        background-color: var(--clr-light-neutral);
+
+        @media (width < $breakpoint-small) {
+            display: none;
+        }
+    }
+}

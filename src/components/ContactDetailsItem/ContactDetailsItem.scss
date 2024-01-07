@@ -1,0 +1,24 @@
+@use "@styles/abstracts" as *;
+
+.contact-item {
+    --flex-align: flex-end;
+    --gap: var(--space-md);
+
+    @media (width <= $breakpoint-medium) {
+        --flex-row-gap: var(--space-xxs);
+        //--flex-align: center;
+
+        //text-align: center;
+        //width: 100%;
+        //flex-direction: column;
+
+        //font-size: var(--fs-200);
+    }
+}
+
+.contact-item__icon {
+    width: 2.75em;
+
+    fill: none;
+    stroke: var(--clr-medium);
+}

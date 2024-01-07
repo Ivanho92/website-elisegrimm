@@ -1,0 +1,32 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import {getEntry} from "astro:content";
+
+const {id} = Astro.props;
+const page = await getEntry("pages", id);
+const {title, coverImageUrl} = page.data;
+const coverImageStyle = `
+    background:	 		
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.66) 0%,
+            rgba(0, 0, 0, 0) 66%
+        ),
+        url(${coverImageUrl});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+`;
+---
+
+<BaseLayout title={`Elise Grimm - ${title}`}>
+    <div
+        class="full-width section page__image-cover clr-white"
+        style={coverImageStyle}
+    >
+        <h1>{title}</h1>
+    </div>
+    <main class="wrapper section flow">
+        <slot />
+    </main>
+</BaseLayout>

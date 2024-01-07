@@ -1,0 +1,29 @@
+---
+interface Props {
+    id: string;
+    class?: string;
+    variant?: "primary" | "secondary";
+}
+
+const {id, class: className} = Astro.props;
+---
+
+<button id={id} class:list={["pill", className]} disabled>
+    <slot />
+</button>
+
+<style>
+    .pill {
+        padding-block: calc(var(--space-sm) / 2);
+        padding-inline: var(--space-sm);
+        font-size: var(--fs-300);
+        border-radius: 3rem;
+        border: none;
+
+        /* TODO: portfolio page */
+        /* &:hover {
+			cursor: pointer;
+			filter: brightness(.98);
+		} */
+    }
+</style>

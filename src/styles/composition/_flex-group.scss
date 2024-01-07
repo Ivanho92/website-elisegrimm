@@ -1,0 +1,10 @@
+.flex-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    column-gap: var(--flex-column-gap, var(--flex-gap, 1em));
+    row-gap: var(--flex-row-gap, var(--flex-gap, 0.5em));
+
+    align-items: var(--flex-align, baseline);
+    justify-content: var(--flex-justify, normal);
+}

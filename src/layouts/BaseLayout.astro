@@ -1,0 +1,82 @@
+---
+// Internal Components and Assets
+import TheFooter from "@components/TheFooter/TheFooter.astro";
+import TheHeader from "@components/TheHeader/TheHeader.astro";
+
+// Styles
+import "@styles/main.scss";
+
+// Javascript
+interface Props {
+    title: string;
+}
+const {title} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Elise Grimm - Clinical Psychologist & Psychotherapist"
+        />
+        <meta name="viewport" content="width=device-width" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+
+    <body>
+        <div class="root-layout">
+            <div>
+                <TheHeader />
+                <slot />
+            </div>
+
+            <TheFooter />
+        </div>
+
+        <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script is:inline src="https://unpkg.com/tabbable/dist/index.umd.js"
+        ></script>
+        <script
+            is:inline
+            src="https://unpkg.com/focus-trap/dist/focus-trap.umd.js"></script>
+
+        <script is:inline>
+            AOS.init({
+                once: true,
+                duration: 750,
+            });
+        </script>
+    </body>
+</html>
+
+<style is:global>
+    .root-layout {
+        min-height: 100dvh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+
+        & > :first-child {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+</style>

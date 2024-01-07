@@ -1,0 +1,44 @@
+@use "@styles/abstracts" as *;
+
+.footer {
+    --section-padding: var(--space-xl);
+
+    & > div {
+        --flex-align: center;
+        --flex-justify: space-between;
+        --flex-column-gap: var(--space-xxl);
+    }
+
+    & a {
+        text-decoration-color: var(--clr-lightest);
+    }
+
+    & a:is(:hover, :focus) {
+        color: var(--clr-light-neutral);
+    }
+}
+
+.footer__social-links {
+    --flex-column-gap: var(--space-xs);
+
+    & .button {
+        --button-padding: 5px;
+
+        --button-responsive-width: fit-content;
+        --button-padding-block: var(--button-padding);
+        --button-padding-inline: var(--button-padding);
+
+        line-height: 1;
+
+        &:is(:hover, :focus) {
+            color: var(--clr-darkest);
+            background-color: var(--clr-light);
+        }
+    }
+
+    & svg[astro-icon="github"] {
+        bottom: -7px;
+        transform: scale(1.3);
+        top: auto;
+    }
+}

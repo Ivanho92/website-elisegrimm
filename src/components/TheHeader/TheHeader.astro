@@ -1,0 +1,111 @@
+---
+// Libraries and Packages
+
+// Internal Components and Assets
+import ContactDetailsItem from "../ContactDetailsItem/ContactDetailsItem.astro";
+import TheNavigation from "@components/TheNavigation/TheNavigation.astro";
+
+// Styles
+import "./TheHeader.scss";
+import Icon from "astro-icon";
+---
+
+<header class="[ header ] [ full-width bg-white ]">
+    <div class="[ header__container ] [ px-sm ]">
+        <a class="[ header__logo ] [ clr-secondary ]" href="/">
+            <p
+                class="ff-heading clr-darkest fs-700 fw-bold line-height-heading"
+            >
+                EG
+            </p>
+            <!--<p>Psy</p>-->
+        </a>
+        <TheNavigation />
+    </div>
+    <div class="full-width bg-lightest">
+        <details id="contact-details">
+            <summary id="contact-details-toggle" class="px-md"
+                >Contact Details</summary
+            >
+            <div
+                class="[ header__contact-details ] [ flex-group pb-md fs-300 ]"
+            >
+                <ContactDetailsItem
+                    key="contact-details-phone"
+                    category="Phone"
+                    icon="phone"
+                    text="0474/92.25.32"
+                    link="tel:0474922532"
+                />
+                <div class="separator"></div>
+                <ContactDetailsItem
+                    key="contact-details-email"
+                    category="Email"
+                    icon="mail"
+                    text="elisembgrimm@gmail.com"
+                    link="mailto:elisembgrimm@gmail.com"
+                />
+                <div class="separator"></div>
+                <ContactDetailsItem
+                    key="contact-details-location"
+                    category="From monday to friday"
+                    icon="clock"
+                    text="1030 Schaerbeek"
+                    link="https://maps.app.goo.gl/fRxDkVAbP5jbx5FL9"
+                    openInNewTab
+                />
+            </div>
+        </details>
+
+        <div
+            class="[ header__contact-details ] [ flex-group px-md fs-300 ]"
+            data-device="desktop"
+        >
+            <ContactDetailsItem
+                key="contact-details-phone"
+                category="Phone"
+                icon="phone"
+                text="0474/92.25.32"
+                link="tel:0474922532"
+            />
+            <div class="separator"></div>
+            <ContactDetailsItem
+                key="contact-details-email"
+                category="Email"
+                icon="mail"
+                text="elisembgrimm@gmail.com"
+                link="mailto:elisembgrimm@gmail.com"
+            />
+            <div class="separator"></div>
+            <ContactDetailsItem
+                key="contact-details-location"
+                category="From monday to friday"
+                icon="clock"
+                text="1030 Schaerbeek"
+                link="https://maps.app.goo.gl/fRxDkVAbP5jbx5FL9"
+                openInNewTab
+            />
+        </div>
+    </div>
+</header>
+
+<script>
+    const contactDetails = document.getElementById("contact-details");
+    const contactDetailsToggle = document.getElementById(
+        "contact-details-toggle",
+    );
+
+    contactDetailsToggle.addEventListener("click", () => {
+        const contactDetailsIsOpened = !contactDetails.hasAttribute("open");
+        localStorage.setItem("contactDetailsIsOpened", contactDetailsIsOpened);
+    });
+
+    setTimeout(() => {
+        const shouldOpenContactDetails = JSON.parse(
+            localStorage.getItem("contactDetailsIsOpened"),
+        );
+        shouldOpenContactDetails || shouldOpenContactDetails === null
+            ? contactDetails.setAttribute("open", "")
+            : contactDetails.removeAttribute("open");
+    }, 100);
+</script>

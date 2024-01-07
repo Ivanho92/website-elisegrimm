@@ -1,0 +1,52 @@
+.wrapper,
+.full-width {
+    --padding-inline: var(--gutter, 2rem);
+    --content-max-width: 992px;
+    --breakout-max-width: 1200px;
+
+    --content-size: min(
+        100% - var(--padding-inline) * 2,
+        var(--content-max-width)
+    );
+    --breakout-size: minmax(
+        0,
+        calc((var(--breakout-max-width) - var(--content-max-width)) / 2)
+    );
+    --full-bleed-size: minmax(var(--padding-inline), 1fr);
+
+    display: grid;
+    grid-template-columns:
+        [full-bleed-start]
+        var(--full-bleed-size)
+        [breakout-start]
+        var(--breakout-size)
+        [content-start]
+        var(--content-size)
+        [content-end]
+        var(--breakout-size)
+        [breakout-end]
+        var(--full-bleed-size)
+        [full-bleed-end];
+}
+
+.wrapper > *,
+.full-width > * {
+    grid-column: content;
+}
+
+.breakout {
+    grid-column: breakout;
+}
+
+.full-bleed {
+    grid-column: full-bleed;
+    width: 100%;
+}
+
+.full-bleed > * {
+    padding-inline: var(--padding-inline);
+}
+
+.full-width {
+    grid-column: full-bleed;
+}
