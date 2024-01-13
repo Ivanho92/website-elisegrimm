@@ -4,17 +4,24 @@ import Icon from "astro-icon";
 
 // Styles
 import "./TheFooter.scss";
+
+// Composables
+import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
+
+// JavaScript
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+const year = new Date().getFullYear();
 ---
 
-<footer id="footer" class="[ footer ] [ px-md bg-darkest clr-white fs-300 ]">
+<footer id="footer" class="[ footer ] [ px-md bg-darkest clr-white fs-200 ]">
     <div class="full-width">
         <div class="flex-group">
             <div>
                 <p>
-                    Copyright © 2024. Designed&nbsp;by&nbsp;<a
+                    Copyright © {year} {t('footer.by')} <a
                         href="https://ivan-rodrigues.com"
                         target="_blank">Ivan&nbsp;Rodrigues</a
-                    >
+                    >. {t('footer.rights')}.
                 </p>
             </div>
             <!--<div class="[ footer__social-links ] [ flex-group ]">-->

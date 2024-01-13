@@ -4,6 +4,14 @@ import {Icon} from "astro-icon";
 
 // Styles
 import "./TheNavigation.scss";
+
+// Composables
+import {getLocaleFromUrl, useTranslations, useTranslatedPath} from "@i18n/utils";
+
+// JavaScript
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const translatePath = useTranslatedPath(locale);
 ---
 
 <nav class="nav">
@@ -13,13 +21,13 @@ import "./TheNavigation.scss";
         </button>
 
         <ul role="list">
-            <li><a href="/">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="therapy">Therapy</a></li>
-            <li><a href="resources">Resources</a></li>
+            <li><a href={translatePath('/')}>{t('nav.home')}</a></li>
+            <li><a href={translatePath('/a-propos')}>{t('nav.about')}</a></li>
+            <li><a href={translatePath('/therapie')}>{t('nav.therapy')}</a></li>
+            <li><a href={translatePath('/ressources')}>{t('nav.resources')}</a></li>
             <li>
-                <a href="appointment" class="[ nav__button-contact ] [ button ]"
-                    >Book Appointment</a
+                <a href={translatePath('/rdv')} class="[ nav__button-contact ] [ button ]"
+                    >{t('nav.appointment')}</a
                 >
             </li>
         </ul>

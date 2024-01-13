@@ -8,8 +8,8 @@
             "@layouts/*": ["src/layouts/*"],
             "@styles/*": ["src/styles/*"],
             "@images/*": ["src/images/*"],
-            "@icons/*": ["src/icons/*"]
+            "@icons/*": ["src/icons/*"],
+            "@i18n/*": ["src/i18n/*"]
         }
-    },
-    "exclude": ["references", "src/components/old"]
+    }
 }

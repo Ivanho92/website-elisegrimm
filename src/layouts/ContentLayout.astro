@@ -2,9 +2,15 @@
 import BaseLayout from "./BaseLayout.astro";
 import {getEntry} from "astro:content";
 
-const {id} = Astro.props;
-const page = await getEntry("pages", id);
-const {title, coverImageUrl} = page.data;
+interface Props {
+    title: string;
+}
+
+
+const { frontmatter } = Astro.props;
+const { title, coverImage } = frontmatter;
+const coverImageUrl = `${Astro.url.origin}/${coverImage}`
+
 const coverImageStyle = `
     background:	 		
         linear-gradient(

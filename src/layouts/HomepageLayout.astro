@@ -1,0 +1,80 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+// Composables
+import {getLocaleFromUrl, useTranslations, useTranslatedPath} from "@i18n/utils";
+
+// Javascript
+interface Props {
+    title: string;
+}
+
+const { title, frontmatter } = Astro.props;
+const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
+const translatePath = useTranslatedPath(locale);
+---
+<BaseLayout title="Elise Grimm - Home">
+    <main class="wrapper">
+        <div class="homepage__container">
+            <div class="homepage__content">
+                <div class="[ homepage__body ] [ section ]">
+                    <div class="clr-white">
+                        <h1>{t("homepage.fullname")}</h1>
+                        <p>{t("homepage.jobtitle")}</p>
+                    </div>
+                    <div class="flex-group" style="--flex-gap: var(--space-md)">
+                        <a
+                            class="button"
+                            data-variant="outline-light"
+                            href={translatePath('/therapie')}>{t('cta.therapy')}</a
+                        >
+                        <a class="button" href={translatePath('/rdv')}>{t('cta.appointment')}</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</BaseLayout>
+
+<style lang="scss">
+  @use "@styles/abstracts" as *;
+
+  main {
+    flex-grow: 1;
+    background: linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.66) 0%,
+                    rgba(0, 0, 0, 0) 66%
+    ),
+    url(background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 545px;
+  }
+
+  .homepage__container {
+    /*--section-padding: var(--space-xl);*/
+
+    /*display: grid;*/
+    /*place-items: center;*/
+  }
+
+  .homepage__content {
+    /*--flex-align: center;*/
+    --flex-gap: var(--space-lg);
+
+    /*justify-content: center;*/
+  }
+
+  .homepage__body {
+    display: grid;
+    gap: var(--space-xl);
+
+    @media (width <= $breakpoint-small) {
+      width: 100%;
+    }
+  }
+</style>
