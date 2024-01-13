@@ -1,16 +1,14 @@
 ---
+// Components
 import BaseLayout from "./BaseLayout.astro";
-import {getEntry} from "astro:content";
 
-interface Props {
-    title: string;
-}
+// Composables
+import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
 
-
-const { frontmatter } = Astro.props;
-const { title, coverImage } = frontmatter;
-const coverImageUrl = `${Astro.url.origin}/${coverImage}`
-
+// JavaScript
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+const {title, coverImage, id: pageID} = Astro.props.frontmatter;
+const coverImageUrl = `${Astro.url.origin}/${coverImage}`;
 const coverImageStyle = `
     background:	 		
         linear-gradient(
@@ -25,7 +23,7 @@ const coverImageStyle = `
 `;
 ---
 
-<BaseLayout title={`Elise Grimm - ${title}`}>
+<BaseLayout title={`Elise Grimm - ${t(`${pageID}`)}`}>
     <div
         class="full-width section page__image-cover clr-white"
         style={coverImageStyle}

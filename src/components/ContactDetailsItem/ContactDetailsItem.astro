@@ -1,11 +1,9 @@
 ---
-// Libraries and Packages
-
-// Internal Components and Assets
-
 // Styles
 import "./ContactDetailsItem.scss";
-import Icon from "astro-icon";
+
+// Libraries
+import { Icon } from 'astro-icon/components'
 
 // Javascript
 interface Props {
@@ -13,9 +11,9 @@ interface Props {
     class?: string;
     category: string;
     icon: string;
-    link: string;
-    openInNewTab: boolean;
     text: string;
+    link: string;
+    openInNewTab?: boolean;
 }
 
 const {
@@ -29,12 +27,12 @@ const {
 } = Astro.props;
 ---
 
-<div id={key} class:list={["[ contact-item ] [ flex-group ]", className]} ">
+<div id={key} class:list={["[ contact-item ] [ flex-group ]", className]}>
     <Icon name={icon} class="contact-item__icon" />
     <div>
         <p class="clr-dark fs-200 line-height-none">{category}</p>
         <p class="line-height-none pt-xs">
-            <a href={link} target={openInNewTab && "_blank"}>{text}</a>
+            <a href={link} target={openInNewTab ? "_blank" : ''}>{text}</a>
         </p>
     </div>
 </div>

@@ -1,4 +1,5 @@
 ---
+id: nav.appointment
 layout: ../../layouts/ContentLayout.astro
 
 title: Book an Appointment

@@ -7,14 +7,19 @@
         cursor: pointer;
     }
 
+    details[open] summary ~ * {
+        animation: sweep 300ms ease-in-out;
+    }
+
+    @keyframes sweep {
+        0%    {opacity: 0; margin-left: -10px}
+        100%  {opacity: 1; margin-left: 0px}
+    }
+
     @media (width >= $breakpoint-small) {
         details {
             display: none;
         }
-
-        //details[open] > summary {
-        //  display: none;
-        //}
     }
 }
 

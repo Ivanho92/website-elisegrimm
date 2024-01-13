@@ -1,14 +1,11 @@
 ---
-// Libraries and Packages
-
-// Components
-import ContactDetailsItem from "../ContactDetailsItem/ContactDetailsItem.astro";
-import TheNavigation from "@components/TheNavigation/TheNavigation.astro";
-import TheLanguagePicker from "../TheLanguagePicker/TheLanguagePicker.astro";
-
 // Styles
 import "./TheHeader.scss";
-import Icon from "astro-icon";
+
+// Components
+import TheNavigation from "@components/TheNavigation/TheNavigation.astro";
+import ContactDetailsItem from "../ContactDetailsItem/ContactDetailsItem.astro";
+// import TheLanguagePicker from "../TheLanguagePicker/TheLanguagePicker.astro";
 
 // Composables
 import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
@@ -17,8 +14,7 @@ import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 ---
 
-<TheLanguagePicker />
-<hr />
+<!--<TheLanguagePicker />--><!--<hr />-->
 <header class="[ header ] [ full-width bg-white ]">
     <div class="[ header__container ] [ px-sm ]">
         <a class="[ header__logo ] [ clr-secondary ]" href="/">
@@ -27,21 +23,20 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
             >
                 EG
             </p>
-            <!--<p>Psy</p>-->
         </a>
         <TheNavigation />
     </div>
     <div class="full-width bg-lightest">
         <details id="contact-details">
             <summary id="contact-details-toggle" class="px-md"
-                >Contact Details
-            </summary>
+                >Contact Details</summary
+            >
             <div
                 class="[ header__contact-details ] [ flex-group pb-md fs-300 ]"
             >
                 <ContactDetailsItem
                     key="contact-details-phone"
-                    category={t('header.phone')}
+                    category={t("header.phone")}
                     icon="phone"
                     text="0474/92.25.32"
                     link="tel:0474922532"
@@ -49,7 +44,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
                 <div class="separator"></div>
                 <ContactDetailsItem
                     key="contact-details-email"
-                    category={t('header.email')}
+                    category={t("header.email")}
                     icon="mail"
                     text="elisembgrimm@gmail.com"
                     link="mailto:elisembgrimm@gmail.com"
@@ -57,7 +52,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
                 <div class="separator"></div>
                 <ContactDetailsItem
                     key="contact-details-location"
-                    category={t('header.schedule')}
+                    category={t("header.schedule")}
                     icon="clock"
                     text="1030 Schaerbeek"
                     link="https://maps.app.goo.gl/fRxDkVAbP5jbx5FL9"
@@ -72,7 +67,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
         >
             <ContactDetailsItem
                 key="contact-details-phone"
-                category={t('header.phone')}
+                category={t("header.phone")}
                 icon="phone"
                 text="0474/92.25.32"
                 link="tel:0474922532"
@@ -80,7 +75,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
             <div class="separator"></div>
             <ContactDetailsItem
                 key="contact-details-email"
-                category={t('header.email')}
+                category={t("header.email")}
                 icon="mail"
                 text="elisembgrimm@gmail.com"
                 link="mailto:elisembgrimm@gmail.com"
@@ -88,7 +83,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
             <div class="separator"></div>
             <ContactDetailsItem
                 key="contact-details-location"
-                category={t('header.schedule')}
+                category={t("header.schedule")}
                 icon="clock"
                 text="1030 Schaerbeek"
                 link="https://maps.app.goo.gl/fRxDkVAbP5jbx5FL9"
@@ -104,17 +99,23 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
         "contact-details-toggle",
     );
 
+    if (!contactDetails || !contactDetailsToggle)
+        throw new Error("contact details error");
+
     contactDetailsToggle.addEventListener("click", () => {
         const contactDetailsIsOpened = !contactDetails.hasAttribute("open");
-        localStorage.setItem("contactDetailsIsOpened", contactDetailsIsOpened);
+        localStorage.setItem(
+            "contactDetailsIsOpened",
+            contactDetailsIsOpened.toString(),
+        );
     });
 
     setTimeout(() => {
         const shouldOpenContactDetails = JSON.parse(
-            localStorage.getItem("contactDetailsIsOpened"),
+            localStorage.getItem("contactDetailsIsOpened") ?? "",
         );
         shouldOpenContactDetails || shouldOpenContactDetails === null
             ? contactDetails.setAttribute("open", "")
             : contactDetails.removeAttribute("open");
-    }, 100);
+    }, 500);
 </script>

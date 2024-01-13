@@ -1,9 +1,9 @@
 ---
-// Libraries and Packages
-import Icon from "astro-icon";
-
 // Styles
 import "./TheFooter.scss";
+
+// Libraries
+// import { Icon } from 'astro-icon/components'
 
 // Composables
 import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
@@ -18,10 +18,11 @@ const year = new Date().getFullYear();
         <div class="flex-group">
             <div>
                 <p>
-                    Copyright © {year} {t('footer.by')} <a
-                        href="https://ivan-rodrigues.com"
-                        target="_blank">Ivan&nbsp;Rodrigues</a
-                    >. {t('footer.rights')}.
+                    Copyright © {year}
+                    {t("footer.by")}
+                    <a href="https://ivan-rodrigues.com" target="_blank"
+                        >Ivan&nbsp;Rodrigues</a
+                    >. {t("footer.rights")}.
                 </p>
             </div>
             <!--<div class="[ footer__social-links ] [ flex-group ]">-->

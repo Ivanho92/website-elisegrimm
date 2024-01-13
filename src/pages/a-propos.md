@@ -1,4 +1,5 @@
 ---
+id: nav.about
 layout: ../layouts/ContentLayout.astro
 
 title: À Propos

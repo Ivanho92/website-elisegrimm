@@ -1,9 +1,9 @@
 ---
-// Libraries and Packages
-import {Icon} from "astro-icon";
-
 // Styles
 import "./TheNavigation.scss";
+
+// Libraries and Packages
+import { Icon } from 'astro-icon/components'
 
 // Composables
 import {getLocaleFromUrl, useTranslations, useTranslatedPath} from "@i18n/utils";
@@ -17,7 +17,7 @@ const translatePath = useTranslatedPath(locale);
 <nav class="nav">
     <div class="nav__menu">
         <button id="close-nav" class="[ close-nav ] [ button-reset fs-700 ]">
-            <Icon name="close" width="30" class="interactive-icon svg-icon" />
+            <Icon name="close" class="interactive-icon svg-icon" size={30} />
         </button>
 
         <ul role="list">

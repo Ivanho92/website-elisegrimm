@@ -1,4 +1,5 @@
 ---
+id: nav.resources
 layout: ../../layouts/ContentLayout.astro
 
 title: Resources

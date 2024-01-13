@@ -1,15 +1,27 @@
 ---
+// Import locales
 import {locales} from "@i18n/config";
-import {getLocaleFromUrl, useTranslatedPath, getRouteFromUrl} from "@i18n/utils";
 
+// Composables
+import {
+    getLocaleFromUrl,
+    useTranslatedPath,
+    getRouteFromUrl,
+} from "@i18n/utils";
+
+// JavaScript
 const translatePath = useTranslatedPath(getLocaleFromUrl(Astro.url));
 const route = getRouteFromUrl(Astro.url);
 ---
 
 <ul>
-    {locales.map(locale => (
-        <li>
-            <a href={translatePath(`/${route ? route : ""}`, locale)}>{locale}</a>
-        </li>
-    ))}
+    {
+        locales.map(locale => (
+            <li>
+                <a href={translatePath(`/${route ? route : ""}`, locale)}>
+                    {locale}
+                </a>
+            </li>
+        ))
+    }
 </ul>

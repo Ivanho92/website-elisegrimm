@@ -9,8 +9,8 @@ export function getLocaleFromUrl(url: URL) {
 
 
 export function useTranslations(lang: keyof typeof translations) {
-    return function t(key: string) {
-        return translations[lang][key] || translations[defaultLocale][key];
+    return function t(key: string): string {
+        return translations[lang][key] ?? translations[defaultLocale][key];
     };
 }
 

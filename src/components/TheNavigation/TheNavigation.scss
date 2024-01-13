@@ -54,6 +54,12 @@
         }
     }
 
+    & .open-nav, .close-nav {
+        &:is(:hover, :focus-visible) > svg {
+            color: var(--clr-primary);
+        }
+    }
+
     & .open-nav {
         display: none;
 
@@ -61,9 +67,7 @@
         border: none;
         background-color: transparent;
 
-        &:is(:hover, :focus) > svg {
-            color: var(--clr-primary);
-        }
+
 
         @media (width <= $breakpoint-medium) {
             display: block;
@@ -73,15 +77,18 @@
     & .close-nav {
         display: none;
 
+        background: none;
+        border: none;
+
         position: fixed;
         top: var(--space-lg);
         right: var(--space-lg);
 
         cursor: pointer;
 
-        &:is(:hover, :focus) > svg {
-            color: var(--clr-primary);
-        }
+        //&:is(:hover, :focus) > svg {
+        //    color: var(--clr-primary);
+        //}
 
         @media (width <= $breakpoint-medium) {
             display: block;
