@@ -16,4 +16,3 @@ effective psychological services to individuals seeking support.
 -   bullet point 2
 
 [Explore Services](/en/therapy)
-

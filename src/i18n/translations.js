@@ -16,8 +16,8 @@ export const translations = {
         "cta.appointment": "Prendre Rendez-vous",
         "cta.therapy": "Thérapie",
 
-        "footer.by": 'par',
-        "footer.rights": "Tous droits reservés"
+        "footer.by": "par",
+        "footer.rights": "Tous droits reservés",
     },
     en: {
         "nav.home": "Home",
@@ -36,7 +36,7 @@ export const translations = {
         "cta.appointment": "Book Appointment",
         "cta.therapy": "Therapy",
 
-        "footer.by": 'by',
-        "footer.rights": "All rights reserved"
+        "footer.by": "by",
+        "footer.rights": "All rights reserved",
     },
 };

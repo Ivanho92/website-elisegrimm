@@ -3,10 +3,14 @@
 import "./TheNavigation.scss";
 
 // Libraries and Packages
-import { Icon } from 'astro-icon/components'
+import {Icon} from "astro-icon/components";
 
 // Composables
-import {getLocaleFromUrl, useTranslations, useTranslatedPath} from "@i18n/utils";
+import {
+    getLocaleFromUrl,
+    useTranslations,
+    useTranslatedPath,
+} from "@i18n/utils";
 
 // JavaScript
 const locale = getLocaleFromUrl(Astro.url);
@@ -21,13 +25,17 @@ const translatePath = useTranslatedPath(locale);
         </button>
 
         <ul role="list">
-            <li><a href={translatePath('/')}>{t('nav.home')}</a></li>
-            <li><a href={translatePath('/a-propos')}>{t('nav.about')}</a></li>
-            <li><a href={translatePath('/therapie')}>{t('nav.therapy')}</a></li>
-            <li><a href={translatePath('/ressources')}>{t('nav.resources')}</a></li>
+            <li><a href={translatePath("/")}>{t("nav.home")}</a></li>
+            <li><a href={translatePath("/a-propos")}>{t("nav.about")}</a></li>
+            <li><a href={translatePath("/therapie")}>{t("nav.therapy")}</a></li>
             <li>
-                <a href={translatePath('/rdv')} class="[ nav__button-contact ] [ button ]"
-                    >{t('nav.appointment')}</a
+                <a href={translatePath("/ressources")}>{t("nav.resources")}</a>
+            </li>
+            <li>
+                <a
+                    href={translatePath("/rdv")}
+                    class="[ nav__button-contact ] [ button ]"
+                    >{t("nav.appointment")}</a
                 >
             </li>
         </ul>

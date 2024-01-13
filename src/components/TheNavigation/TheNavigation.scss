@@ -54,7 +54,8 @@
         }
     }
 
-    & .open-nav, .close-nav {
+    & .open-nav,
+    .close-nav {
         &:is(:hover, :focus-visible) > svg {
             color: var(--clr-primary);
         }
@@ -66,8 +67,6 @@
         cursor: pointer;
         border: none;
         background-color: transparent;
-
-
 
         @media (width <= $breakpoint-medium) {
             display: block;
