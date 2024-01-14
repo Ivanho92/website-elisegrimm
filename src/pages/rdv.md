@@ -15,22 +15,24 @@ importantMessage: |
 ---
 
 **Horaires et lieu de consultation**
-- Adresse - Rue Jan Blockx - 1030 Schaerbeek 
-- Horaires - De 10H à 17H, du lundi  au vendredi
+
+-   Adresse - Rue Jan Blockx - 1030 Schaerbeek
+-   Horaires - De 10H à 17H, du lundi au vendredi
 
 <br>
 
-Chaque séance dure environ **une heure**. La fréquence des rdv est discutée en fonction de ce que vous souhaitez et de ce 
+Chaque séance dure environ **une heure**. La fréquence des rdv est discutée en fonction de ce que vous souhaitez et de ce
 qui est matériellement possible pour vous et pour moi.
 
 <br>
 
-Mes honoraires sont de **60 euros** par séance. Certaines mutualités remboursent partiellement les séances. Je vous invite 
+Mes honoraires sont de **60 euros** par séance. Certaines mutualités remboursent partiellement les séances. Je vous invite
 à vous renseignez directement auprès de votre mutuelle et de votre assurance complémentaire pour connaître les modalités
 exactes des remboursements.
 
 <br>
 
 **Contact**
-- par email : [elisembgrimm@gmail.com](elisembgrimm@gmail.com)
-- par téléphone : [0474/92.25.32](tel:0474922532)
+
+-   par email : [elisembgrimm@gmail.com](elisembgrimm@gmail.com)
+-   par téléphone : [0474/92.25.32](tel:0474922532)
