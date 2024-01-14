@@ -11,6 +11,7 @@ import {
     useTranslations,
     useTranslatedPath,
 } from "@i18n/utils";
+import TheLanguagePicker from "../TheLanguagePicker/TheLanguagePicker.astro";
 
 // JavaScript
 const locale = getLocaleFromUrl(Astro.url);
@@ -38,6 +39,8 @@ const translatePath = useTranslatedPath(locale);
                     >{t("nav.appointment")}</a
                 >
             </li>
+
+            <TheLanguagePicker separator="top" />
         </ul>
     </div>
 

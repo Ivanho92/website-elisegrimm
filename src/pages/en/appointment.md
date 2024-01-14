@@ -3,7 +3,7 @@ id: nav.appointment
 layout: ../../layouts/ContentLayout.astro
 
 title: Book an Appointment
-coverImage: background-image5.jpg
+coverImage: /background-image5.jpg
 ---
 
 -   **Contact Details:**

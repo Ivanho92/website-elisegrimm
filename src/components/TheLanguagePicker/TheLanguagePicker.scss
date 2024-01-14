@@ -1,0 +1,22 @@
+.language-picker {
+    display: flex;
+    gap: var(--space-sm);
+    padding: 0;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:is(:hover, :focus) {
+            color: var(--clr-primary);
+        }
+    }
+
+    a[active] {
+        text-decoration: underline;
+        text-decoration-color: var(--clr-primary);
+    }
+}

@@ -3,6 +3,8 @@
 .footer {
     --section-padding: var(--space-xl);
 
+    //border-top: 4px solid var(--clr-primary);
+
     & > div {
         --flex-align: center;
         --flex-justify: space-between;
@@ -11,6 +13,7 @@
 
     & a {
         text-decoration-color: var(--clr-lightest);
+        text-decoration-thickness: auto;
     }
 
     & a:is(:hover, :focus) {

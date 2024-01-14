@@ -1,5 +1,8 @@
 ---
-// Import locales
+// Styles
+import "./TheLanguagePicker.scss";
+
+// Locales
 import {locales} from "@i18n/config";
 
 // Composables
@@ -10,18 +13,63 @@ import {
 } from "@i18n/utils";
 
 // JavaScript
-const translatePath = useTranslatedPath(getLocaleFromUrl(Astro.url));
+const locale = getLocaleFromUrl(Astro.url);
+const translatePath = useTranslatedPath(locale);
 const route = getRouteFromUrl(Astro.url);
+
+interface Props {
+    separator?: "left" | "top";
+}
+
+const {separator} = Astro.props;
+
+const leftSeparator =
+    separator === "left"
+        ? `
+    padding-left: var(--space-md);
+    border-left: 1px solid var(--clr-light-neutral);
+`
+        : "";
+
+const topSeparator =
+    separator === "top"
+        ? `
+    width: 150px; 
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--clr-light-neutral);
+`
+        : "";
+
+const separatorStyles = [leftSeparator, topSeparator].join("");
 ---
 
-<ul>
+<!--{separator === 'top' && <hr style="width: 150px; border: 1px solid var(&#45;&#45;clr-light-neutral)">}-->
+<ul
+    id="language-picker"
+    class="[ language-picker ] [ clr-medium-neutral uppercase ]"
+    style={separatorStyles}
+>
     {
         locales.map(locale => (
             <li>
-                <a href={translatePath(`/${route ? route : ""}`, locale)}>
+                <a
+                    id={`locale-${locale}`}
+                    href={translatePath(`/${route ? route : ""}`, locale)}
+                >
                     {locale}
                 </a>
             </li>
         ))
     }
 </ul>
+
+<script define:vars={{locale}}>
+    const allLocalesNodes = Array.from(
+        document.querySelectorAll("#language-picker a"),
+    );
+    for (const el of allLocalesNodes) {
+        el.textContent.trim() === locale
+            ? el.setAttribute("active", "")
+            : el.removeAttribute("active");
+    }
+</script>

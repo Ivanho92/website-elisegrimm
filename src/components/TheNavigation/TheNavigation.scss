@@ -26,9 +26,10 @@
             }
         }
 
-        & ul {
+        & > ul {
             display: flex;
             align-items: baseline;
+            padding: 0;
             gap: var(--space-lg);
 
             @media (width <= $breakpoint-medium) {

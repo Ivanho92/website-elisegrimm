@@ -2,8 +2,8 @@
 id: nav.about
 layout: ../layouts/ContentLayout.astro
 
-title: À Propos
-coverImage: background-image5.jpg
+title: À propos
+coverImage: /background-image5.jpg
 ---
 
 Bonjour, je m'appelle Jane Doe, psychologue agréée avec un doctorat en psychologie clinique.

@@ -9,6 +9,7 @@ export const translations = {
         "header.phone": "Téléphone",
         "header.email": "Email",
         "header.schedule": "Du lundi au vendredi",
+        "header.showdetails": "Coordonnées de contact",
 
         "homepage.fullname": "Elise Grimm",
         "homepage.jobtitle": "Psychologue Clinicienne & Psychothérapeute",
@@ -29,6 +30,7 @@ export const translations = {
         "header.phone": "Phone",
         "header.email": "Email",
         "header.schedule": "From monday to friday",
+        "header.showdetails": "Contact details",
 
         "homepage.fullname": "Elise Grimm",
         "homepage.jobtitle": "Clinical Psychologist & Psychotherapist",

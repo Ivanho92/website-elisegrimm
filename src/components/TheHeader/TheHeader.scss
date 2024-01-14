@@ -3,6 +3,11 @@
 .header {
     --section-padding: var(--space-md);
 
+    .contact-details {
+        //border-bottom: 1px dashed var(--clr-light-neutral);
+        //border-bottom: 4px solid var(--clr-primary);
+    }
+
     details {
         cursor: pointer;
     }
@@ -34,10 +39,28 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    & .nav__menu .language-picker {
+        display: none;
+    }
+
+    @media (width <= $breakpoint-medium) {
+        & .language-picker {
+            display: none;
+        }
+
+        & .nav__menu .language-picker {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 .header__logo {
     text-decoration: none;
+
+    //padding-right: var(--space-md);
+    //border-right: 1px solid var(--clr-light-neutral);
 
     &:is(:hover, :focus) {
         color: var(--clr-primary);
@@ -58,10 +81,6 @@
     }
 
     & .separator {
-        width: 1px;
-        height: 100%;
-        background-color: var(--clr-light-neutral);
-
         @media (width < $breakpoint-small) {
             display: none;
         }

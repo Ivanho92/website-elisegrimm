@@ -2,7 +2,7 @@
 id: nav.about
 layout: ../../layouts/ContentLayout.astro
 
-title: About Me
+title: About me
 coverImage: /background-image5.jpg
 ---
 

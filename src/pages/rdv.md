@@ -3,7 +3,7 @@ id: nav.appointment
 layout: ../layouts/ContentLayout.astro
 
 title: Prendre un rendez-vous
-coverImage: background-image5.jpg
+coverImage: /background-image5.jpg
 ---
 
 -   **Coordonnées :**
