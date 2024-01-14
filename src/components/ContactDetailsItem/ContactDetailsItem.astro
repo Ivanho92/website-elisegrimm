@@ -30,9 +30,13 @@ const {
 <div id={key} class:list={["[ contact-item ] [ flex-group ]", className]}>
     <Icon name={icon} class="contact-item__icon" />
     <div>
-        <p class="clr-dark fs-200 line-height-none">{category}</p>
+        <p class="clr-medium fs-200 line-height-none">{category}</p>
         <p class="line-height-none pt-xs">
-            <a href={link} target={openInNewTab ? "_blank" : ""}>{text}</a>
+            <a
+                class="clr-primary-shade"
+                href={link}
+                target={openInNewTab ? "_blank" : ""}>{text}</a
+            >
         </p>
     </div>
 </div>
