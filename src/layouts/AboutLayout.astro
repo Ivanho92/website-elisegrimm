@@ -11,7 +11,7 @@ import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
 
 // JavaScript
 const t = useTranslations(getLocaleFromUrl(Astro.url));
-const {title, image, alt} = Astro.props.frontmatter;
+const {title} = Astro.props.frontmatter;
 ---
 
 <BaseLayout title={`Elise Grimm - ${t("nav.about")}`}>
@@ -42,7 +42,7 @@ const {title, image, alt} = Astro.props.frontmatter;
 
         @media (width < $breakpoint-medium) {
             float: none;
-          margin-inline: auto;
+            margin-inline: auto;
         }
     }
 </style>
