@@ -94,6 +94,11 @@ a:focus-visible {
     // outline-offset: 0.25rem;
 }
 
+ul {
+    padding-inline-start: 1em;
+    text-align: left;
+}
+
 @media (width <= $breakpoint-phone) {
     h1 {
         font-size: var(--fs-800);

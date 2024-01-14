@@ -3,6 +3,7 @@ id: nav.about
 layout: ../../layouts/AboutLayout.astro
 
 title: About
+coverImage: /background-image4.jpg
 ---
 
 Hello, I'm Jane Doe, a licensed psychologist with a Ph.D. in Clinical Psychology.
