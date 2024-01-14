@@ -1,0 +1,48 @@
+---
+// Image
+import {Image} from "astro:assets";
+import elisePicture from "@images/elise.png";
+
+// Components
+import BaseLayout from "./BaseLayout.astro";
+
+// Composables
+import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
+
+// JavaScript
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+const {title, image, alt} = Astro.props.frontmatter;
+---
+
+<BaseLayout title={`Elise Grimm - ${t("nav.about")}`}>
+    <main class="wrapper section">
+        <h1>{title}</h1>
+        <div class="flow">
+            <Image
+                src={elisePicture}
+                alt="Profile Picture"
+                class="profile__picture"
+                style="height: auto"
+            />
+            <slot />
+        </div>
+    </main>
+</BaseLayout>
+
+<style lang="scss">
+    @use "@styles/abstracts" as *;
+
+    .profile__picture {
+        filter: sepia(0.2) hue-rotate(65deg);
+
+        border-radius: 100vh;
+        float: right;
+        margin-inline: var(--space-md);
+        margin-block: var(--space-md);
+
+        @media (width < $breakpoint-medium) {
+            float: none;
+          margin-inline: auto;
+        }
+    }
+</style>

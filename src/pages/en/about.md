@@ -1,9 +1,8 @@
 ---
 id: nav.about
-layout: ../../layouts/ContentLayout.astro
+layout: ../../layouts/AboutLayout.astro
 
-title: About me
-coverImage: /background-image5.jpg
+title: About
 ---
 
 Hello, I'm Jane Doe, a licensed psychologist with a Ph.D. in Clinical Psychology.
