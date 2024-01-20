@@ -1,3 +1,4 @@
+
 ---
 // Components
 import BaseLayout from "@layouts/BaseLayout.astro";
@@ -8,15 +9,38 @@ import {
     useTranslations,
     useTranslatedPath,
 } from "@i18n/utils";
+import {getHighResImage,getLowResImage} from "../images/utils";
 
 // Javascript
+const {coverImage: bgImageName} = Astro.props.frontmatter;
+
+console.log(bgImageName);
+
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
 const translatePath = useTranslatedPath(locale);
+
+const highResBackgroundImage = await getHighResImage(bgImageName);
+const lowResBackgroundImage = await getLowResImage(`lowres_${bgImageName}`);
+const coverImageStyle = `
+    background:	 		
+        linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.66) 0%,
+                rgba(0, 0, 0, 0) 66%
+        ),
+        url('${highResBackgroundImage.src}'),
+        url('${lowResBackgroundImage.src}'),
+        var(--clr-darkest);
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+`;
 ---
 
 <BaseLayout title={`Elise Grimm - ${t("nav.home")}`}>
-    <main class="wrapper">
+    <main class="wrapper" style={coverImageStyle}>
         <div class="homepage__container">
             <div class="homepage__content">
                 <div class="[ homepage__body ] [ section ]">
@@ -46,15 +70,6 @@ const translatePath = useTranslatedPath(locale);
 
     main {
         flex-grow: 1;
-        background: linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.66) 0%,
-                rgba(0, 0, 0, 0) 66%
-            ),
-            url(/background-image.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         min-height: 545px;
     }
 

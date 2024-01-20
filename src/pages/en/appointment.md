@@ -3,7 +3,7 @@ id: nav.appointment
 layout: ../../layouts/MapsLayout.astro
 
 title: Book an appointment
-coverImage: /background-image5.jpg
+coverImage: bg-img5.jpg
 
 importantMessage: |
     <p>When you schedule an appointment, you commit to:</p>

@@ -1,7 +1,8 @@
 ---
 // Images
-import {Image} from "astro:assets";
-import elisePicture from "@images/elise.png";
+import {Image, getImage} from "astro:assets";
+import highResProfilePicture from "@images/elise.png";
+import lowResPicture from "@images/lowres/lowres_elise.png";
 
 // Components
 import BaseLayout from "./BaseLayout.astro";
@@ -13,6 +14,8 @@ import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
 // JavaScript
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 const {title, coverImage} = Astro.props.frontmatter;
+
+const lowResProfilePicture = await getImage({ src: lowResPicture });
 ---
 
 <BaseLayout title={`Elise Grimm - ${t("nav.about")}`}>
@@ -20,10 +23,13 @@ const {title, coverImage} = Astro.props.frontmatter;
     <main class="wrapper section">
         <div class="flow">
             <Image
-                src={elisePicture}
-                alt="Profile Picture"
-                class="profile__picture"
-                style="height: auto"
+                src={highResProfilePicture}
+                alt={t("about.picture.alt")}
+                class="[ profile__picture ] [ blur-load ]"
+                style={{
+                    height: "auto",
+                    backgroundImage: `url('${lowResProfilePicture.src}')`,
+                }}
             />
             <slot />
         </div>

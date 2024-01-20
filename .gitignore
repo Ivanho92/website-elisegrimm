@@ -25,3 +25,6 @@ references/
 
 # IDEs
 .idea
+
+# Miscellaneous
+utils/

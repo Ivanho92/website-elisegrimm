@@ -3,7 +3,7 @@ id: nav.therapy
 layout: ../../layouts/ContentLayout.astro
 
 title: Therapy
-coverImage: /background-image2.jpg
+coverImage: bg-img2.jpg
 ---
 
 At Jane Doe's practice, we offer a range of services, including individual counseling,

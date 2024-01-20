@@ -3,7 +3,7 @@ id: nav.resources
 layout: ../../layouts/ContentLayout.astro
 
 title: Resources
-coverImage: /background-image3.jpg
+coverImage: bg-img3.jpg
 ---
 
 Welcome to our Resources section, where you can find valuable information and articles related to mental health and well-being.

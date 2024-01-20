@@ -27,6 +27,8 @@ export const translations = {
         "contact.phone.link": "0474922532",
         "contact.phone.text": "0474/92.25.32",
         "contact.email": "elisembgrimm@gmail.com",
+
+        "about.picture.alt": "Portrait d'Elise Grimm, souriante, Psychologue Clinicienne & Psychothérapeute"
     },
     en: {
         "nav.home": "Home",
@@ -56,5 +58,7 @@ export const translations = {
         "contact.phone.link": "0474922532",
         "contact.phone.text": "0474/92.25.32",
         "contact.email": "elisembgrimm@gmail.com",
+
+        "about.picture.alt": "Portrait of Elise Grimm, smiling, Clinical Psychologist & Psychotherapist"
     },
 };

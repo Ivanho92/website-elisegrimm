@@ -1,20 +1,30 @@
 ---
+// Composables
+import {getHighResImage, getLowResImage} from "@images/utils";
+
+// JavaScript
 interface Props {
     class?: string;
     title: string;
     "background-image": string;
 }
 
-const {class: className, title, "background-image": bgImage} = Astro.props;
+const {class: className, title, "background-image": bgImageName} = Astro.props;
 
-const coverImageStyle = `
+const highResBackgroundImage = await getHighResImage(bgImageName);
+const lowResBackgroundImage = await getLowResImage(`lowres_${bgImageName}`);
+
+    const coverImageStyle = `
     background:	 		
         linear-gradient(
             90deg,
             rgba(0, 0, 0, 0.66) 0%,
             rgba(0, 0, 0, 0) 66%
         ),
-        url(${bgImage});
+        url('${highResBackgroundImage.src}'),
+        url('${lowResBackgroundImage.src}'),
+        var(--clr-primary);
+      
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top right;

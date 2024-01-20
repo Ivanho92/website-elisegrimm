@@ -3,7 +3,7 @@ id: nav.appointment
 layout: ../layouts/MapsLayout.astro
 
 title: Prendre un rendez-vous
-coverImage: /background-image5.jpg
+coverImage: bg-img5.jpg
 
 importantMessage: |
     <p>Lorsque vous prenez un rendez-vous, vous vous engagez à:</p>
