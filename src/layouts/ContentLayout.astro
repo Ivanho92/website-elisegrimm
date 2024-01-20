@@ -1,6 +1,7 @@
 ---
 // Components
 import BaseLayout from "./BaseLayout.astro";
+import CoverImage from "../components/CoverImage/CoverImage.astro";
 
 // Composables
 import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
@@ -8,24 +9,10 @@ import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
 // JavaScript
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 const {title, coverImage, id: pageID} = Astro.props.frontmatter;
-const coverImageStyle = `
-    background:	 		
-        linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0.66) 0%,
-            rgba(0, 0, 0, 0) 66%
-        ),
-        url(${coverImage});
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top right;
-`;
 ---
 
 <BaseLayout title={`Elise Grimm - ${t(`${pageID}`)}`}>
-    <div class="full-width section clr-white" style={coverImageStyle}>
-        <h1>{title}</h1>
-    </div>
+    <CoverImage title={title} background-image={coverImage} class="clr-white" />
     <main class="wrapper section flow">
         <slot />
     </main>

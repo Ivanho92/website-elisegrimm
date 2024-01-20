@@ -19,6 +19,8 @@ export const translations = {
 
         "footer.by": "par",
         "footer.rights": "Tous droits reservés",
+
+        "maps.street": "Rue Jan Blockx 31A - 1030 Schaerbeek",
     },
     en: {
         "nav.home": "Home",
@@ -40,5 +42,7 @@ export const translations = {
 
         "footer.by": "by",
         "footer.rights": "All rights reserved",
+
+        "maps.street": "Rue Jan Blockx 31A - 1030 Schaerbeek",
     },
 };

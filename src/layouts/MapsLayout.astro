@@ -1,6 +1,7 @@
 ---
 // Components
-import BaseLayout from "./BaseLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CoverImage from "@components/CoverImage/CoverImage.astro";
 
 // Composables
 import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
@@ -13,28 +14,15 @@ const {
     id: pageID,
     importantMessage,
 } = Astro.props.frontmatter;
-const coverImageStyle = `
-    background:	 		
-        linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0.66) 0%,
-            rgba(0, 0, 0, 0) 66%
-        ),
-        url(${coverImage});
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top right;
-`;
 
 // Environment Variables
 const API_KEY = import.meta.env.GOOGLEMAPS_APIKEY;
 const MAP_ID = import.meta.env.MAP_ID;
+const streetName = t("maps.street");
 ---
 
 <BaseLayout title={`Elise Grimm - ${t(`${pageID}`)}`}>
-    <div class="full-width section clr-white" style={coverImageStyle}>
-        <h1>{title}</h1>
-    </div>
+    <CoverImage title={title} background-image={coverImage} class="clr-white" />
     <main class="wrapper section">
         <div class="flow" style="--flow-spacer: var(--space-xl)">
             <div class="map-container">
@@ -76,7 +64,7 @@ const MAP_ID = import.meta.env.MAP_ID;
     }
 </style>
 
-<script is:inline define:vars={{API_KEY, MAP_ID}}>
+<script is:inline define:vars={{API_KEY, MAP_ID, streetName}}>
     // @ts-nocheck
     const LATITUDE = 50.871;
     const LONGITUDE = 4.383;
@@ -89,27 +77,23 @@ const MAP_ID = import.meta.env.MAP_ID;
     let map;
 
     async function initMap() {
-        // The location of Uluru
         const position = {lat: LATITUDE, lng: LONGITUDE};
 
-        // Request needed libraries.
         // @ts-ignore
         const {Map} = await google.maps.importLibrary("maps");
         const {AdvancedMarkerElement} =
             await google.maps.importLibrary("marker");
 
-        // The map, centered at Uluru
         map = new Map(document.getElementById("map"), {
             zoom: 14,
             center: position,
             mapId: MAP_ID,
         });
 
-        // The marker, positioned at Uluru
         new AdvancedMarkerElement({
             map,
             position,
-            title: "Rue Jan Blockx - 1030 Schaerbeek",
+            title: streetName,
         });
     }
 

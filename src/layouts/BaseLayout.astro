@@ -27,7 +27,6 @@ const locale = getLocaleFromUrl(Astro.url);
 const route = getRouteFromUrl(Astro.url);
 const basePath = Astro.url.origin;
 const translatePath = useTranslatedPath(locale);
-console.log(route);
 const t = useTranslations(locale);
 ---
 

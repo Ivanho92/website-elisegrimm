@@ -1,0 +1,29 @@
+---
+interface Props {
+    class?: string;
+    title: string;
+    "background-image": string;
+}
+
+const {class: className, title, "background-image": bgImage} = Astro.props;
+
+const coverImageStyle = `
+    background:	 		
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.66) 0%,
+            rgba(0, 0, 0, 0) 66%
+        ),
+        url(${bgImage});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+`;
+---
+
+<div
+    class:list={["[ full-width section ]", `[ ${className} ]`]}
+    style={coverImageStyle}
+>
+    <h1>{title}</h1>
+</div>
