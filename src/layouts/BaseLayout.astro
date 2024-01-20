@@ -7,7 +7,15 @@ import TheFooter from "@components/TheFooter/TheFooter.astro";
 import TheHeader from "@components/TheHeader/TheHeader.astro";
 
 // Composables
-import {getLocaleFromUrl, useTranslations} from "../i18n/utils";
+import {
+    getLocaleFromUrl,
+    useTranslations,
+    useTranslatedPath,
+    getRouteFromUrl,
+} from "../i18n/utils";
+
+// Locales
+import {locales} from "../i18n";
 
 // Javascript
 interface Props {
@@ -16,6 +24,10 @@ interface Props {
 
 const {title} = Astro.props;
 const locale = getLocaleFromUrl(Astro.url);
+const route = getRouteFromUrl(Astro.url);
+const basePath = Astro.url.origin;
+const translatePath = useTranslatedPath(locale);
+console.log(route);
 const t = useTranslations(locale);
 ---
 
@@ -46,6 +58,27 @@ const t = useTranslations(locale);
         <title>{title}</title>
 
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- i18n alternates -->
+        {
+            locales.map(locale => (
+                <link
+                    rel="alternate"
+                    hreflang={locale}
+                    href={
+                        basePath +
+                        translatePath(`/${route ? route : ""}`, locale)
+                    }
+                />
+            ))
+        }
+
+        <!-- i18n alternate default (fr) -->
+        <link
+            rel="alternate"
+            hreflang="x-default"
+            href={basePath + translatePath(`/${route ? route : ""}`, "fr")}
+        />
     </head>
 
     <body>
