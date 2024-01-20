@@ -15,14 +15,15 @@ import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 const {title, coverImage} = Astro.props.frontmatter;
 
-const lowResProfilePicture = await getImage({ src: lowResPicture });
+const lowResProfilePicture = await getImage({src: lowResPicture});
 ---
 
 <BaseLayout title={`Elise Grimm - ${t("nav.about")}`}>
     <CoverImage title={title} background-image={coverImage} class="clr-white" />
-    <main class="wrapper section"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
+    <main
+        class="wrapper section"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
     >
         <div class="flow">
             <Image

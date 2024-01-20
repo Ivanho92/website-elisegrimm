@@ -14,7 +14,7 @@ const {class: className, title, "background-image": bgImageName} = Astro.props;
 const highResBackgroundImage = await getHighResImage(bgImageName);
 const lowResBackgroundImage = await getLowResImage(`lowres_${bgImageName}`);
 
-    const coverImageStyle = `
+const coverImageStyle = `
     background:	 		
         linear-gradient(
             90deg,
