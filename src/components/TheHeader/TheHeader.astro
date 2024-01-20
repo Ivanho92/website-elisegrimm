@@ -18,6 +18,33 @@ import {
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
 const translatePath = useTranslatedPath(locale);
+
+const contactDetails = [
+    {
+        key: "contact-details-phone",
+        category: t("header.phone"),
+        icon: "phone",
+        text: t("contact.phone.text"),
+        link: `tel:${t("contact.phone.link")}`,
+        openInNewTab: false,
+    },
+    {
+        key: "contact-details-email",
+        category: t("header.email"),
+        icon: "mail",
+        text: t("contact.email"),
+        link: `mailto:${t("contact.email")}`,
+        openInNewTab: false,
+    },
+    {
+        key: "contact-details-location",
+        category: t("header.schedule"),
+        icon: "clock",
+        text: t("header.location.text"),
+        link: t("header.location.maps"),
+        openInNewTab: true,
+    },
+];
 ---
 
 <header class="[ header ] [ full-width bg-white ]">
@@ -40,31 +67,20 @@ const translatePath = useTranslatedPath(locale);
             >
             <div
                 class="[ header__contact-details ] [ flex-group pb-md fs-300 ]"
+                data-device="mobile"
             >
-                <ContactDetailsItem
-                    key="contact-details-phone"
-                    category={t("header.phone")}
-                    icon="phone"
-                    text="0474/92.25.32"
-                    link="tel:0474922532"
-                />
-                <div class="separator"></div>
-                <ContactDetailsItem
-                    key="contact-details-email"
-                    category={t("header.email")}
-                    icon="mail"
-                    text="elisembgrimm@gmail.com"
-                    link="mailto:elisembgrimm@gmail.com"
-                />
-                <div class="separator"></div>
-                <ContactDetailsItem
-                    key="contact-details-location"
-                    category={t("header.schedule")}
-                    icon="clock"
-                    text="1030 Schaerbeek"
-                    link="https://maps.app.goo.gl/fRxDkVAbP5jbx5FL9"
-                    openInNewTab
-                />
+                {
+                    contactDetails.map(item => (
+                        <ContactDetailsItem
+                            key={item.key}
+                            category={item.category}
+                            icon={item.icon}
+                            text={item.text}
+                            link={item.link}
+                            openInNewTab={item.openInNewTab}
+                        />
+                    ))
+                }
             </div>
         </details>
 
@@ -72,30 +88,18 @@ const translatePath = useTranslatedPath(locale);
             class="[ header__contact-details ] [ flex-group px-md fs-300 ]"
             data-device="desktop"
         >
-            <ContactDetailsItem
-                key="contact-details-phone"
-                category={t("header.phone")}
-                icon="phone"
-                text="0474/92.25.32"
-                link="tel:0474922532"
-            />
-            <div class="separator"></div>
-            <ContactDetailsItem
-                key="contact-details-email"
-                category={t("header.email")}
-                icon="mail"
-                text="elisembgrimm@gmail.com"
-                link="mailto:elisembgrimm@gmail.com"
-            />
-            <div class="separator"></div>
-            <ContactDetailsItem
-                key="contact-details-location"
-                category={t("header.schedule")}
-                icon="clock"
-                text="1030 Schaerbeek"
-                link="https://maps.app.goo.gl/fRxDkVAbP5jbx5FL9"
-                openInNewTab
-            />
+            {
+                contactDetails.map(item => (
+                    <ContactDetailsItem
+                        key={item.key}
+                        category={item.category}
+                        icon={item.icon}
+                        text={item.text}
+                        link={item.link}
+                        openInNewTab={item.openInNewTab}
+                    />
+                ))
+            }
         </div>
     </div>
 </header>

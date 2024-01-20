@@ -9,6 +9,8 @@ export const translations = {
         "header.phone": "Téléphone",
         "header.email": "Email",
         "header.schedule": "Du lundi au vendredi",
+        "header.location.text": "1030 Schaerbeek",
+        "header.location.maps": "https://maps.app.goo.gl/fRxDkVAbP5jbx5FL9",
         "header.showdetails": "Coordonnées de contact",
 
         "homepage.fullname": "Elise Grimm",
@@ -21,6 +23,10 @@ export const translations = {
         "footer.rights": "Tous droits reservés",
 
         "maps.street": "Rue Jan Blockx 31A - 1030 Schaerbeek",
+
+        "contact.phone.link": "0474922532",
+        "contact.phone.text": "0474/92.25.32",
+        "contact.email": "elisembgrimm@gmail.com",
     },
     en: {
         "nav.home": "Home",
@@ -32,6 +38,8 @@ export const translations = {
         "header.phone": "Phone",
         "header.email": "Email",
         "header.schedule": "From monday to friday",
+        "header.location.text": "1030 Schaerbeek",
+        "header.location.maps": "https://maps.app.goo.gl/fRxDkVAbP5jbx5FL9",
         "header.showdetails": "Contact details",
 
         "homepage.fullname": "Elise Grimm",
@@ -44,5 +52,9 @@ export const translations = {
         "footer.rights": "All rights reserved",
 
         "maps.street": "Rue Jan Blockx 31A - 1030 Schaerbeek",
+
+        "contact.phone.link": "0474922532",
+        "contact.phone.text": "0474/92.25.32",
+        "contact.email": "elisembgrimm@gmail.com",
     },
 };
