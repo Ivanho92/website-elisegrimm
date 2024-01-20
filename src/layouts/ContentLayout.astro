@@ -13,7 +13,10 @@ const {title, coverImage, id: pageID} = Astro.props.frontmatter;
 
 <BaseLayout title={`Elise Grimm - ${t(`${pageID}`)}`}>
     <CoverImage title={title} background-image={coverImage} class="clr-white" />
-    <main class="wrapper section flow">
+    <main class="wrapper section flow"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+    >
         <slot />
     </main>
 </BaseLayout>

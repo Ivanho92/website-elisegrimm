@@ -20,7 +20,10 @@ const lowResProfilePicture = await getImage({ src: lowResPicture });
 
 <BaseLayout title={`Elise Grimm - ${t("nav.about")}`}>
     <CoverImage title={title} background-image={coverImage} class="clr-white" />
-    <main class="wrapper section">
+    <main class="wrapper section"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+    >
         <div class="flow">
             <Image
                 src={highResProfilePicture}
@@ -30,6 +33,8 @@ const lowResProfilePicture = await getImage({ src: lowResPicture });
                     height: "auto",
                     backgroundImage: `url('${lowResProfilePicture.src}')`,
                 }}
+                data-aos="fade-left"
+                data-aos-offset="250"
             />
             <slot />
         </div>
