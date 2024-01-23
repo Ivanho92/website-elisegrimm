@@ -23,8 +23,8 @@ importantMessage: |
 
 #### Price
 
-A consultation costs **60 euros**. Payment can be made in cash or by QR code (banking application) at the end of the 
-consultation. It is important to know that some insurance companies offer partial reimbursement of the fees, so please 
+A consultation costs **60 euros**. Payment can be made in cash or by QR code (banking application) at the end of the
+consultation. It is important to know that some insurance companies offer partial reimbursement of the fees, so please
 don't hesitate to get in touch with yours.
 
 <br>
@@ -41,7 +41,7 @@ The practice is accessible by
 
 #### Contacting me
 
-I'm available on [0474/92.25.32](tel:0474922532) (Call/SMS/Whatsapp) or by email at 
+I'm available on [0474/92.25.32](tel:0474922532) (Call/SMS/Whatsapp) or by email at
 [psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com).
 
 Don't hesitate to contact me if you have any question.

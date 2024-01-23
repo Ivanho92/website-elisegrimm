@@ -41,7 +41,7 @@ Le cabinet est accessible par:
 
 #### Me contacter
 
-Je suis disponible au [0474/92.25.32](tel:0474922532) (Appel/SMS/Whatsapp) ou par mail à 
+Je suis disponible au [0474/92.25.32](tel:0474922532) (Appel/SMS/Whatsapp) ou par mail à
 [psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com).
 
 N'hésitez pas à me contacter pour toute éventuelle question.

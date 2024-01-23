@@ -1,13 +1,13 @@
 @use "@styles/abstracts" as *;
 
 @property --gradient1 {
-    syntax: '<color>';
+    syntax: "<color>";
     initial-value: #00847e;
     inherits: false;
 }
 
 @property --gradient2 {
-    syntax: '<color>';
+    syntax: "<color>";
     initial-value: #005f5b;
     inherits: false;
 }
@@ -28,7 +28,11 @@
 
     color: var(--clr-white);
     background: var(--clr-primary);
-    background: linear-gradient(90deg, var(--gradient1) 0%, var(--gradient2) 50%);
+    background: linear-gradient(
+        90deg,
+        var(--gradient1) 0%,
+        var(--gradient2) 50%
+    );
 
     display: inline-block;
     border: none;

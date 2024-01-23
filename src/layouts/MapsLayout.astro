@@ -24,16 +24,16 @@ const {
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
     >
-            <div class="map-container">
-                <div class="flow">
-                    <slot />
-                </div>
-                <GoogleMaps />
+        <div class="map-container">
+            <div class="flow">
+                <slot />
             </div>
+            <GoogleMaps />
+        </div>
 
-            <div class="[ important-message ] [ bg-lightest box-shadow mt-xl ]">
-                <Fragment set:html={importantMessage} />
-            </div>
+        <div class="[ important-message ] [ bg-lightest box-shadow mt-xl ]">
+            <Fragment set:html={importantMessage} />
+        </div>
     </main>
 </BaseLayout>
 

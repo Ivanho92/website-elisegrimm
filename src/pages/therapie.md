@@ -18,20 +18,22 @@ la thérapie ACT, la thérapie métacognitive, ou encore, la thérapie transdiag
 n'hésitez pas à consulter l'onglet "Ressources".
 
 ## En pratique
+
 Chaque séance a une durée **d'une heure** et peut se tenir en français ou en anglais. Il est recommandé de commencer
 avec des séances hebdomadaires et de les espacer progressivement avec le temps, tout en ajustant le rythme en fonction
 de vos besoins.
 
 ## Difficultés prises en charge
-- Anxiété (attaque de panique, trouble panique, anxiété sociale, anxiété généralisée, agoraphobie, phobie(s) spécifique(s), ...)
-- Trouble obsessionnel compulsif (TOCs)
-- Gestion du stress (p. ex., à l'école ou à l'université)
-- Burnout professionnel ou parental
-- Gestion des ruminations mentales (anticipations ou préoccupations anxieuses, ruminations dépressives)
-- Gestion du perfectionnisme
-- Stress post-traumatique
-- Troubles de l'humeur (fatigue chronique, dépression, ...)
-- Confiance en soi et affirmation de soi
-- Troubles des conduites alimentaires (anorexie mentale, boulimie, hyperphagie)
+
+-   Anxiété (attaque de panique, trouble panique, anxiété sociale, anxiété généralisée, agoraphobie, phobie(s) spécifique(s), ...)
+-   Trouble obsessionnel compulsif (TOCs)
+-   Gestion du stress (p. ex., à l'école ou à l'université)
+-   Burnout professionnel ou parental
+-   Gestion des ruminations mentales (anticipations ou préoccupations anxieuses, ruminations dépressives)
+-   Gestion du perfectionnisme
+-   Stress post-traumatique
+-   Troubles de l'humeur (fatigue chronique, dépression, ...)
+-   Confiance en soi et affirmation de soi
+-   Troubles des conduites alimentaires (anorexie mentale, boulimie, hyperphagie)
 
 [Prendre un rendez-vous](/rdv)
