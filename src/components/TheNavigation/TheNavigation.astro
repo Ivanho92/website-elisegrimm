@@ -21,7 +21,7 @@ const translatePath = useTranslatedPath(locale);
 
 <nav class="nav">
     <div class="nav__menu">
-        <button id="close-nav" class="[ close-nav ] [ button-reset fs-700 ]">
+        <button id="close-nav" class="[ close-nav ] [ button-reset fs-700 ]" aria-label={t('nav.close')}>
             <Icon name="close" class="interactive-icon svg-icon" size={30} />
         </button>
 
@@ -29,13 +29,13 @@ const translatePath = useTranslatedPath(locale);
             <li><a href={translatePath("/")}>{t("nav.home")}</a></li>
             <li><a href={translatePath("/a-propos")}>{t("nav.about")}</a></li>
             <li><a href={translatePath("/therapie")}>{t("nav.therapy")}</a></li>
-            <li>
-                <a href={translatePath("/ressources")}>{t("nav.resources")}</a>
-            </li>
+            <!--<li>-->
+            <!--    <a href={translatePath("/ressources")}>{t("nav.resources")}</a>-->
+            <!--</li>-->
             <li>
                 <a
                     href={translatePath("/rdv")}
-                    class="[ nav__button-contact ] [ button ]"
+                    class="button"
                     >{t("nav.appointment")}</a
                 >
             </li>
@@ -48,6 +48,7 @@ const translatePath = useTranslatedPath(locale);
         id="open-nav"
         class="[ open-nav ] [ p-0 fs-700 ]"
         data-btn-variant="secondary"
+        aria-label={t('nav.open')}
     >
         <Icon name="burger-menu" class="svg-icon interactive-icon" />
     </button>

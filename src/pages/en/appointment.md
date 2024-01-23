@@ -3,34 +3,45 @@ id: nav.appointment
 layout: ../../layouts/MapsLayout.astro
 
 title: Book an appointment
-coverImage: bg-img5.jpg
+coverImage: banner-calendar.png
 
 importantMessage: |
-    <p>When you schedule an appointment, you commit to:</p>
-    <ul>
-        <li>notify me at least 24 hours in advance for any cancellations; otherwise, I reserve the right to charge for the session.</li>
-        <li>adhere to the scheduled times to avoid having to shorten the session.</li>
-    </ul>
+    <p>
+      In the event of a major setback, it is entirely possible to cancel an appointment.
+      However, please give me at least <strong>48 hours' notice</strong>.  
+      Otherwise, payment for the consultation will be requested. 
+      Thank you for your understanding.
+    </p>
 ---
 
-**Consultation Schedule and Location**
+#### Location and hours
 
--   Address - Rue Jan Blockx - 1030 Schaerbeek
--   Hours - From 10 AM to 5 PM, Monday to Friday
-
-<br>
-
-Each session lasts approximately **one hour**. The frequency of appointments is discussed based on your preferences and
-what is practically feasible for both you and me.
+-   In-person consultations (Monday afternoons and evenings) : <a href="https://maps.app.goo.gl/ZiPnN6xyHavBY6do9" target="_blank" />73 rue G. Kurth, B-1140 Bruxelles (Evere)</a>
+-   Videoconference consultations - <a href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a>
 
 <br>
 
-My fees are **60 euros** per session. Some health insurance funds partially reimburse sessions. I encourage you to inquire
-directly with your health insurance fund and supplementary insurance to understand the exact reimbursement procedures.
+#### Price
+
+A consultation costs **60 euros**. Payment can be made in cash or by QR code (banking application) at the end of the 
+consultation. It is important to know that some insurance companies offer partial reimbursement of the fees, so please 
+don't hesitate to get in touch with yours.
 
 <br>
 
-**Contact**
+#### Access
 
--   by email: [elisembgrimm@gmail.com](elisembgrimm@gmail.com)
--   by phone: [0474/92.25.32](tel:0474922532)
+The practice is accessible by
+
+-   Bus : Stop "Kurth" (bus 66) or stop "Conscience" (buses 66, 65 et 66)
+-   Train: Evere station is a 2-minute walk away
+-   Car: E40 and Ring nearby, blue zone disc parking (two hours free) can be found Rue J. B. Mosselmans
+
+<br>
+
+#### Contacting me
+
+I'm available on [0474/92.25.32](tel:0474922532) (Call/SMS/Whatsapp) or by email at 
+[psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com).
+
+Don't hesitate to contact me if you have any question.

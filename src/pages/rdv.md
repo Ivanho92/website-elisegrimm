@@ -3,36 +3,45 @@ id: nav.appointment
 layout: ../layouts/MapsLayout.astro
 
 title: Prendre un rendez-vous
-coverImage: bg-img5.jpg
+coverImage: banner-calendar.png
 
 importantMessage: |
-    <p>Lorsque vous prenez un rendez-vous, vous vous engagez à:</p>
-    <ul>
-        <li>m’avertir au minimum 24h à l’avance pour toutes annulations, dans le cas contraire je me réserve le droit de 
-        facturer la séance.</li>
-        <li>respecter les horaires, afin de ne pas devoir écourter la séance.</li>
-    </ul>
+    <p>
+        En cas d'empêchement majeur, il est tout à fait possible d'annuler un rendez-vous.
+        Cependant, je vous prie de bien vouloir me prévenir au moins <strong>48 heures</strong> à l'avance.
+        Dans le cas contraire, le règlement de la consultation sera demandé. 
+        Je vous remercie pour votre compréhension.
+    </p>
 ---
 
-**Horaires et lieu de consultation**
+#### Lieu et horaires des consultations
 
--   Adresse - Rue Jan Blockx - 1030 Schaerbeek
--   Horaires - De 10H à 17H, du lundi au vendredi
-
-<br>
-
-Chaque séance dure environ **une heure**. La fréquence des rdv est discutée en fonction de ce que vous souhaitez et de ce
-qui est matériellement possible pour vous et pour moi.
+-   Consultations en présentiel (le lundi après-midi et soirée) - <a href="https://maps.app.goo.gl/ZiPnN6xyHavBY6do9" target="_blank" />73 rue G. Kurth, B-1140 Bruxelles (Evere)</a>
+-   Consultations en distanciel - <a href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a>
 
 <br>
 
-Mes honoraires sont de **60 euros** par séance. Certaines mutualités remboursent partiellement les séances. Je vous invite
-à vous renseignez directement auprès de votre mutuelle et de votre assurance complémentaire pour connaître les modalités
-exactes des remboursements.
+#### Honoraires
+
+Une consultation revient à **60 euros**. Le paiement peut se faire en liquide ou par code QR (application bancaire) à
+la fin de la consultation. Il est important de savoir que certaines mutuelles proposent un remboursement partiel des
+honoraires, n'hésitez pas à prendre contact avec la vôtre.
 
 <br>
 
-**Contact**
+#### Accès
 
--   par email : [elisembgrimm@gmail.com](elisembgrimm@gmail.com)
--   par téléphone : [0474/92.25.32](tel:0474922532)
+Le cabinet est accessible par:
+
+-   Bus : Arrêt "Kurth" (bus 66) ou arrêt "Conscience" (bus 66, 65 et 66)
+-   Train : Gare d'Evere à 2 minutes à pied
+-   Voiture : E40 et Ring à proximité, parking zone bleue à disque (deux heures gratuites) Rue J. B. Mosselmans
+
+<br>
+
+#### Me contacter
+
+Je suis disponible au [0474/92.25.32](tel:0474922532) (Appel/SMS/Whatsapp) ou par mail à 
+[psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com).
+
+N'hésitez pas à me contacter pour toute éventuelle question.

@@ -46,14 +46,14 @@ const separatorStyles = [leftSeparator, topSeparator].join("");
 <!--{separator === 'top' && <hr style="width: 150px; border: 1px solid var(&#45;&#45;clr-light-neutral)">}-->
 <ul
     id="language-picker"
-    class="[ language-picker ] [ clr-medium-neutral uppercase ]"
+    class="[ language-picker ] [ uppercase ]"
     style={separatorStyles}
 >
     {
         locales.map(locale => (
             <li>
                 <a
-                    id={`locale-${locale}`}
+                    class="clr-medium-neutral"
                     href={translatePath(`/${route ? route : ""}`, locale)}
                 >
                     {locale}

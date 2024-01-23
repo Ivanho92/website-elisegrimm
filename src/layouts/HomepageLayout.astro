@@ -13,8 +13,6 @@ import {getHighResImage, getLowResImage} from "../images/utils";
 // Javascript
 const {coverImage: bgImageName} = Astro.props.frontmatter;
 
-console.log(bgImageName);
-
 const locale = getLocaleFromUrl(Astro.url);
 const t = useTranslations(locale);
 const translatePath = useTranslatedPath(locale);
@@ -46,7 +44,7 @@ const coverImageStyle = `
                     class="[ homepage__body ] [ section ]"
                     data-aos="fade-right"
                 >
-                    <div class="clr-white">
+                    <div class="clr-white text-shadow">
                         <h1>{t("homepage.fullname")}</h1>
                         <p>{t("homepage.jobtitle")}</p>
                     </div>

@@ -45,6 +45,10 @@
         font-size: var(--fs-400);
         text-decoration: none;
 
+        &:not(.button) {
+            color: var(--clr-darkest-neutral);
+        }
+
         &:is(:hover, :focus):not(.button) {
             text-decoration: underline;
             color: var(--clr-primary);

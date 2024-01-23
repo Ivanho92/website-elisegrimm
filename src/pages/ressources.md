@@ -3,7 +3,7 @@ id: nav.resources
 layout: ../layouts/ContentLayout.astro
 
 title: Ressources
-coverImage: bg-img3.jpg
+coverImage: banner-library.png
 ---
 
 Bienvenue dans notre section Ressources, où vous pouvez trouver des informations précieuses et des articles liés à la santé mentale et au bien-être.

@@ -39,7 +39,7 @@ const contactDetails = [
     {
         key: "contact-details-location",
         category: t("header.schedule"),
-        icon: "clock",
+        icon: "location",
         text: t("header.location.text"),
         link: t("header.location.maps"),
         openInNewTab: true,
@@ -123,7 +123,7 @@ const contactDetails = [
 
     setTimeout(() => {
         const shouldOpenContactDetails = JSON.parse(
-            localStorage.getItem("contactDetailsIsOpened") ?? "",
+            localStorage.getItem("contactDetailsIsOpened") ?? "false",
         );
         shouldOpenContactDetails || shouldOpenContactDetails === null
             ? contactDetails.setAttribute("open", "")

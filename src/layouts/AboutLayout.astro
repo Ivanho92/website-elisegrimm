@@ -1,8 +1,8 @@
 ---
 // Images
 import {Image, getImage} from "astro:assets";
-import highResProfilePicture from "@images/elise.png";
-import lowResPicture from "@images/lowres/lowres_elise.png";
+import highResProfilePicture from "@images/elise-tint.png";
+import lowResPicture from "@images/lowres/lowres_elise-tint.png";
 
 // Components
 import BaseLayout from "./BaseLayout.astro";
@@ -46,12 +46,12 @@ const lowResProfilePicture = await getImage({src: lowResPicture});
     @use "@styles/abstracts" as *;
 
     .profile__picture {
-        filter: sepia(0.2) hue-rotate(65deg);
-
-        border-radius: 100vh;
+        border-radius: 100dvw;
         float: right;
         margin-inline: var(--space-md);
-        margin-block: var(--space-md);
+        margin-block-end: var(--space-md);
+        max-height: 320px;
+        width: auto;
 
         @media (width < $breakpoint-medium) {
             float: none;
