@@ -39,10 +39,10 @@ MAP_ID=yyy
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/website-project.git
+git clone https://github.com/Ivanho92/website-elisegrimm.git
 
 # Navigate to the project directory
-cd website-project
+cd website-elisegrimm
 
 # Install dependencies
 npm install
