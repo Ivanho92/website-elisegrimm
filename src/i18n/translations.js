@@ -22,7 +22,7 @@ export const translations = {
         "cta.therapy": "Thérapie",
 
         "footer.by": "par",
-        "footer.rights": "Tous droits reservés",
+        "footer.rights": "Tous droits réservés",
 
         "maps.street": "Rue Godefroid Kurth 73 - 1140 Evere",
         "maps.lat": 50.869,
