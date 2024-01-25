@@ -4,7 +4,7 @@
     --flex-align: flex-end;
     --gap: var(--space-md);
 
-    @media (width <= $breakpoint-medium) {
+    @media (max-width: $breakpoint-medium) {
         --flex-row-gap: var(--space-xxs);
     }
 }

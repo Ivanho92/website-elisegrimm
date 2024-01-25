@@ -27,12 +27,13 @@
     border-radius: var(--button-border-radius, 0);
 
     color: var(--clr-white);
-    background: var(--clr-primary);
+
     background: linear-gradient(
         90deg,
         var(--gradient1) 0%,
         var(--gradient2) 50%
     );
+    background-color: var(--clr-primary-shade);
 
     display: inline-block;
     border: none;
@@ -42,13 +43,14 @@
     cursor: pointer;
     transition:
         color var(--button-transition) ease-in,
+        background-color var(--button-transition) ease-in,
         --gradient1 var(--button-transition) ease-in,
         --gradient2 var(--button-transition) ease-in,
         box-shadow var(--button-transition) ease-in;
 }
 
 .button {
-    @media (width <= $breakpoint-small) {
+    @media (max-width: $breakpoint-small) {
         width: var(--button-responsive-width, 100%);
         display: block;
         text-align: center;
@@ -63,6 +65,7 @@
 .button:is(:hover, :focus),
 .button[data-variant="primary"]:is(:hover, :focus) {
     color: var(--clr-white);
+    background-color: var(--clr-primary);
     --gradient1: var(--clr-primary);
     --gradient2: var(--clr-primary);
 }
