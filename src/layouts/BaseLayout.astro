@@ -2,6 +2,10 @@
 // Styles
 import "@styles/main.scss";
 
+// Thumbnail Image
+import {getImage} from "astro:assets";
+import bgFlowers from "@images/bg-flowers.png"
+
 // Components
 import TheFooter from "@components/TheFooter/TheFooter.astro";
 import TheHeader from "@components/TheHeader/TheHeader.astro";
@@ -23,11 +27,15 @@ interface Props {
 }
 
 const {title} = Astro.props;
+
 const locale = getLocaleFromUrl(Astro.url);
 const route = getRouteFromUrl(Astro.url);
 const basePath = Astro.url.origin;
 const translatePath = useTranslatedPath(locale);
 const t = useTranslations(locale);
+
+const thumbnailImage = await getImage({src: bgFlowers});
+console.log(thumbnailImage)
 ---
 
 <!doctype html>
@@ -40,6 +48,17 @@ const t = useTranslations(locale);
         />
         <meta name="viewport" content="width=device-width" />
 
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content=`${t('homepage.fullname')} - ${t('homepage.jobtitle')}` />
+        <meta property="og:url" content={basePath + translatePath(`/${route ? route : ""}`, locale)} />
+        <meta property="og:image" content={basePath + thumbnailImage.src} />
+        <meta property="og:image:width" content={thumbnailImage.attributes.width} />
+        <meta property="og:image:height" content={thumbnailImage.attributes.height} />
+        <meta property="og:locale" content={locale}>
+
+
+        <!-- favicon -->
         <link
             rel="icon"
             type="image/png"
