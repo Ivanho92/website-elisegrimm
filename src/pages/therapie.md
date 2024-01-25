@@ -14,8 +14,7 @@ La TCC adopte une approche "empiriquement fondée", s'appuyant sur les dernière
 Le processus thérapeutique commence généralement par une séance où nous faisons le point ensemble. Ensuite, les modules
 de suivi sont choisis de manière collaborative et adaptés en fonction des difficultés spécifiques identifiées.
 Cette approche englobe diverses "variantes", telles que la thérapie cognitive basée sur la pleine conscience (MBCT),
-la thérapie ACT, la thérapie métacognitive, ou encore, la thérapie transdiagnostique. Pour plus d'information,
-n'hésitez pas à consulter l'onglet "Ressources".
+la thérapie ACT, la thérapie métacognitive, ou encore, la thérapie transdiagnostique.
 
 ## En pratique
 
