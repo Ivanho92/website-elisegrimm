@@ -2,7 +2,7 @@
 
 .nav {
     & .nav__menu {
-        @media (width <= $breakpoint-medium) {
+        @media (max-width: $breakpoint-medium) {
             position: fixed;
             background: var(--clr-white);
 
@@ -32,7 +32,7 @@
             padding: 0;
             gap: var(--space-lg);
 
-            @media (width <= $breakpoint-medium) {
+            @media (max-width: $breakpoint-medium) {
                 display: grid;
                 justify-items: center;
                 align-content: center;
@@ -54,7 +54,7 @@
             color: var(--clr-primary);
         }
 
-        @media (width <= $breakpoint-medium) {
+        @media (max-width: $breakpoint-medium) {
             font-size: var(--fs-500);
         }
     }
@@ -73,7 +73,7 @@
         border: none;
         background-color: transparent;
 
-        @media (width <= $breakpoint-medium) {
+        @media (max-width: $breakpoint-medium) {
             display: block;
         }
     }
@@ -94,7 +94,7 @@
         //    color: var(--clr-primary);
         //}
 
-        @media (width <= $breakpoint-medium) {
+        @media (max-width: $breakpoint-medium) {
             display: block;
         }
     }

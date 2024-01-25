@@ -28,7 +28,7 @@
         }
     }
 
-    @media (width >= $breakpoint-small) {
+    @media (min-width: $breakpoint-small) {
         details {
             display: none;
         }
@@ -45,7 +45,7 @@
         display: none;
     }
 
-    @media (width <= $breakpoint-medium) {
+    @media (max-width: $breakpoint-medium) {
         & .language-picker {
             display: none;
         }
@@ -68,7 +68,7 @@
 .header__contact-details {
     --flex-justify: space-evenly;
 
-    @media (width < $breakpoint-small) {
+    @media (max-width: $breakpoint-small) {
         --flex-justify: flex-start;
         --flex-row-gap: var(--space-lg);
         flex-direction: column;
@@ -79,7 +79,7 @@
     }
 
     & .separator {
-        @media (width < $breakpoint-small) {
+        @media (max-width: $breakpoint-small) {
             display: none;
         }
     }

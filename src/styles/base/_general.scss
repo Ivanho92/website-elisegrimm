@@ -106,7 +106,7 @@ ul {
     text-align: left;
 }
 
-@media (width <= $breakpoint-phone) {
+@media (max-width: $breakpoint-phone) {
     h1 {
         font-size: var(--fs-800);
     }

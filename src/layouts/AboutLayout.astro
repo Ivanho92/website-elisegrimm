@@ -53,7 +53,7 @@ const lowResProfilePicture = await getImage({src: lowResPicture});
         max-height: 320px;
         width: auto;
 
-        @media (width < $breakpoint-medium) {
+        @media (max-width: $breakpoint-medium) {
             float: none;
             margin-inline: auto;
         }
