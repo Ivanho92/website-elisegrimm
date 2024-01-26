@@ -5,4 +5,9 @@ import icon from "astro-icon";
 export default defineConfig({
     site: "https://www.elisegrimm.com",
     integrations: [icon()],
+    vite: {
+        build: {
+            cssTarget: "safari12",
+        },
+    },
 });
