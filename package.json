@@ -9,8 +9,7 @@
         "build:verbose": "astro check && astro build --verbose",
         "preview": "astro preview",
         "astro": "astro",
-        "ffmpeg": "bash ./utils/lowresimg.sh",
-        "autoprefixer:info": "autoprefixer --info"
+        "ffmpeg": "bash ./utils/lowresimg.sh"
     },
     "dependencies": {
         "@astrojs/check": "^0.3.1",

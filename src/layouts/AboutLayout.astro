@@ -1,8 +1,7 @@
 ---
 // Images
-import {Image, getImage} from "astro:assets";
-import highResProfilePicture from "@images/elise-tint.png";
-import lowResPicture from "@images/lowres/lowres_elise-tint.png";
+import {Image} from "astro:assets";
+import profilePicture from "@images/elise-tint.png";
 
 // Components
 import BaseLayout from "./BaseLayout.astro";
@@ -10,12 +9,14 @@ import CoverImage from "../components/CoverImage/CoverImage.astro";
 
 // Composables
 import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
+import {getLowResImage} from "@images/utils";
 
 // JavaScript
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 const {title, coverImage} = Astro.props.frontmatter;
 
-const lowResProfilePicture = await getImage({src: lowResPicture});
+// const highResPicture = await getHighResImage("elise-tint.png");
+const lowResPicture = await getLowResImage("lowres_elise-tint.png");
 ---
 
 <BaseLayout title={`Elise Grimm - ${t("nav.about")}`}>
@@ -27,12 +28,13 @@ const lowResProfilePicture = await getImage({src: lowResPicture});
     >
         <div class="flow">
             <Image
-                src={highResProfilePicture}
+                src={profilePicture}
+                format="jpeg"
                 alt={t("about.picture.alt")}
                 class="[ profile__picture ] [ blur-load ]"
                 style={{
                     height: "auto",
-                    backgroundImage: `url('${lowResProfilePicture.src}')`,
+                    backgroundImage: `url('${lowResPicture.src}')`,
                 }}
                 data-aos="fade-left"
                 data-aos-offset="250"

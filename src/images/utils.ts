@@ -2,7 +2,10 @@ import type {ImageMetadata} from "astro";
 import {getImage} from "astro:assets";
 
 export const getOptimizedImage = async (bgImage: any) => {
-    const optimizedBackgroundImage = await getImage({src: bgImage()});
+    const optimizedBackgroundImage = await getImage({
+        src: bgImage(),
+        format: "jpeg",
+    });
     return optimizedBackgroundImage;
 };
 
