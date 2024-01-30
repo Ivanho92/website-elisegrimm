@@ -4,7 +4,12 @@
     --flex-align: flex-end;
     --gap: var(--space-md);
 
+    flex-wrap: nowrap;
+    word-break: break-word;
+    line-height: var(--line-height-base);
+
     @media (max-width: $breakpoint-medium) {
+        --flex-align: flex-start;
         --flex-row-gap: var(--space-xxs);
     }
 }
