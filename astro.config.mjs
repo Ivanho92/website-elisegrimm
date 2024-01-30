@@ -1,5 +1,7 @@
 import {defineConfig} from "astro/config";
 import icon from "astro-icon";
+import Inspect from "vite-plugin-inspect";
+import browserslistToEsbuild from "browserslist-to-esbuild";
 
 // https://astro.build/config
 export default defineConfig({
@@ -7,7 +9,8 @@ export default defineConfig({
     integrations: [icon()],
     vite: {
         build: {
-            cssTarget: "safari12",
+            target: browserslistToEsbuild(),
         },
+        plugins: [Inspect()],
     },
 });

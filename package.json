@@ -20,6 +20,9 @@
         "prettier": "^3.2.4",
         "prettier-plugin-astro": "^0.12.3",
         "sass": "^1.70.0",
-        "typescript": "^5.3.3"
+        "typescript": "^5.3.3",
+        "browserslist": "^4.22.3",
+        "browserslist-to-esbuild": "^2.1.1",
+        "vite-plugin-inspect": "^0.8.3"
     }
 }
