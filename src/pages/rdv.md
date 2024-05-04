@@ -14,14 +14,14 @@ importantMessage: |
     </p>
 ---
 
-#### Lieu et horaires des consultations
+<h2 class="fs-500">Lieu et horaires des consultations</h2>
 
 -   Consultations en présentiel (le lundi après-midi et soirée) - <a href="https://maps.app.goo.gl/ZiPnN6xyHavBY6do9" target="_blank" />73 rue G. Kurth, B-1140 Bruxelles (Evere)</a>
 -   Consultations en distanciel - <a href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a>
 
 <br>
 
-#### Honoraires
+<h2 class="fs-500">Honoraires</h2>
 
 Une consultation revient à **60 euros**. Le paiement peut se faire en liquide ou par code QR (application bancaire) à
 la fin de la consultation. Il est important de savoir que certaines mutuelles proposent un remboursement partiel des
@@ -29,7 +29,7 @@ honoraires, n'hésitez pas à prendre contact avec la vôtre.
 
 <br>
 
-#### Accès
+<h2 class="fs-500">Accès</h2>
 
 Le cabinet est accessible par:
 
@@ -39,7 +39,7 @@ Le cabinet est accessible par:
 
 <br>
 
-#### Me contacter
+<h2 class="fs-500">Me contacter</h2>
 
 Je suis disponible au [0474/92.25.32](tel:0474922532) (Appel/SMS/Whatsapp) ou par mail à
 [psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com).

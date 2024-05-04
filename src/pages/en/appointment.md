@@ -14,14 +14,14 @@ importantMessage: |
     </p>
 ---
 
-#### Location and hours
+<h2 class="fs-500">Location and hours</h2>
 
 -   In-person consultations (Monday afternoons and evenings) : <a href="https://maps.app.goo.gl/ZiPnN6xyHavBY6do9" target="_blank" />73 rue G. Kurth, B-1140 Bruxelles (Evere)</a>
 -   Videoconference consultations - <a href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a>
 
 <br>
 
-#### Price
+<h2 class="fs-500">Price</h2>
 
 A consultation costs **60 euros**. Payment can be made in cash or by QR code (banking application) at the end of the
 consultation. It is important to know that some insurance companies offer partial reimbursement of the fees, so please
@@ -29,7 +29,7 @@ don't hesitate to get in touch with yours.
 
 <br>
 
-#### Access
+<h2 class="fs-500">Access</h2>
 
 The practice is accessible by
 
@@ -39,7 +39,7 @@ The practice is accessible by
 
 <br>
 
-#### Contacting me
+<h2 class="fs-500">Contacting me</h2>
 
 I'm available on [0474/92.25.32](tel:0474922532) (Call/SMS/Whatsapp) or by email at
 [psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com).

@@ -11,9 +11,11 @@ import {
     useTranslatedPath,
     getRouteFromUrl,
 } from "@i18n/utils";
+import {useTranslations} from "../../i18n/utils";
 
 // JavaScript
 const locale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(locale);
 const translatePath = useTranslatedPath(locale);
 const route = getRouteFromUrl(Astro.url);
 
@@ -52,8 +54,11 @@ const separatorStyles = [leftSeparator, topSeparator].join("");
         locales.map(locale => (
             <li>
                 <a
+                    lang={locale}
+                    hreflang={locale}
                     class="clr-medium-neutral"
                     href={translatePath(`/${route ? route : ""}`, locale)}
+                    aria-label={t(`language.switch.${locale}`)}
                 >
                     {locale}
                 </a>

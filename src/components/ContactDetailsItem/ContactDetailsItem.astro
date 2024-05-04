@@ -33,8 +33,11 @@ const {
             <a
                 class="clr-primary-shade"
                 href={link}
-                target={openInNewTab ? "_blank" : ""}>{text}</a
+                target={openInNewTab ? "_blank" : ""}
+                aria-label={category + ': ' + text}
             >
+                {text}
+            </a>
         </p>
     </div>
 </div>

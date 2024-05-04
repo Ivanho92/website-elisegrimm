@@ -8,12 +8,16 @@ export const translations = {
         "nav.open": "Ouvrir le menu de navigation",
         "nav.close": "Fermer le menu de navigation",
 
+        "language.switch.fr": "Accéder à la version française",
+        "language.switch.en": "Switch to English version",
+
         "header.phone": "Téléphone",
         "header.email": "Email",
         "header.schedule": "Localisation",
         "header.location.text": "1140 Evere",
         "header.location.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
         "header.showdetails": "Coordonnées de contact",
+        "header.gotohomepage": "Accéder à la page d'accueil",
 
         "homepage.fullname": "Elise Grimm",
         "homepage.jobtitle": "Psychologue Clinicienne & Psychothérapeute",
@@ -33,7 +37,7 @@ export const translations = {
         "contact.email": "psychologue.elisegrimm@gmail.com",
 
         "about.picture.alt":
-            "Portrait d'Elise Grimm, souriante, Psychologue Clinicienne & Psychothérapeute",
+            "Portrait d'Elise Grimm en train de sourire",
     },
     en: {
         "nav.home": "Home",
@@ -44,12 +48,17 @@ export const translations = {
         "nav.open": "Open Navigation",
         "nav.close": "Close Navigation",
 
+        "language.switch.fr": "Accéder à la version française",
+        "language.switch.en": "Switch to English version",
+
         "header.phone": "Phone",
         "header.email": "Email",
         "header.schedule": "Location",
         "header.location.text": "1140 Evere",
         "header.location.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
         "header.showdetails": "Contact details",
+        "header.gotohomepage": "Go to homepage",
+
 
         "homepage.fullname": "Elise Grimm",
         "homepage.jobtitle": "Clinical Psychologist & Psychotherapist",
@@ -69,6 +78,6 @@ export const translations = {
         "contact.email": "psychologue.elisegrimm@gmail.com",
 
         "about.picture.alt":
-            "Portrait of Elise Grimm, smiling, Clinical Psychologist & Psychotherapist",
+            "Portrait of Elise Grimm smiling",
     },
 };
