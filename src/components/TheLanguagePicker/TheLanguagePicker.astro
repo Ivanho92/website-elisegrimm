@@ -45,7 +45,6 @@ const separatorStyles = [leftSeparator, topSeparator].join("");
 
 <!--{separator === 'top' && <hr style="width: 150px; border: 1px solid var(&#45;&#45;clr-light-neutral)">}-->
 <ul
-    id="language-picker"
     class="[ language-picker ] [ uppercase ]"
     style={separatorStyles}
 >
@@ -65,7 +64,7 @@ const separatorStyles = [leftSeparator, topSeparator].join("");
 
 <script define:vars={{locale}}>
     const allLocalesNodes = Array.from(
-        document.querySelectorAll("#language-picker a"),
+        document.querySelectorAll("a"),
     );
     for (const el of allLocalesNodes) {
         el.textContent.trim() === locale

@@ -7,7 +7,6 @@ import {Icon} from "astro-icon/components";
 
 // Javascript
 interface Props {
-    key: string;
     class?: string;
     category: string;
     icon: string;
@@ -17,7 +16,6 @@ interface Props {
 }
 
 const {
-    key,
     class: className,
     category,
     icon,
@@ -27,7 +25,7 @@ const {
 } = Astro.props;
 ---
 
-<div id={key} class:list={["[ contact-item ] [ flex-group ]", className]}>
+<div class:list={["[ contact-item ] [ flex-group ]", className]}>
     <Icon name={icon} class="contact-item__icon" />
     <div>
         <p class="clr-medium fs-200 line-height-none">{category}</p>

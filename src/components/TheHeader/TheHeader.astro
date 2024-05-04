@@ -21,25 +21,22 @@ const translatePath = useTranslatedPath(locale);
 
 const contactDetails = [
     {
-        key: "contact-details-phone",
-        category: t("header.phone"),
         icon: "phone",
+        category: t("header.phone"),
         text: t("contact.phone.text"),
         link: `tel:${t("contact.phone.link")}`,
         openInNewTab: false,
     },
     {
-        key: "contact-details-email",
-        category: t("header.email"),
         icon: "mail",
+        category: t("header.email"),
         text: t("contact.email"),
         link: `mailto:${t("contact.email")}`,
         openInNewTab: false,
     },
     {
-        key: "contact-details-location",
-        category: t("header.schedule"),
         icon: "location",
+        category: t("header.schedule"),
         text: t("header.location.text"),
         link: t("header.location.maps"),
         openInNewTab: true,
@@ -72,7 +69,6 @@ const contactDetails = [
                 {
                     contactDetails.map(item => (
                         <ContactDetailsItem
-                            key={item.key}
                             category={item.category}
                             icon={item.icon}
                             text={item.text}
@@ -91,7 +87,6 @@ const contactDetails = [
             {
                 contactDetails.map(item => (
                     <ContactDetailsItem
-                        key={item.key}
                         category={item.category}
                         icon={item.icon}
                         text={item.text}
