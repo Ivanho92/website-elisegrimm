@@ -23,9 +23,9 @@ importantMessage: |
 
 <h2 class="fs-500">Price</h2>
 
-A consultation costs **60 euros**. Payment can be made in cash or by QR code (banking application) at the end of the
-consultation. It is important to know that some insurance companies offer partial reimbursement of the fees, so please
-don't hesitate to get in touch with yours.
+A consultation costs **65 euros**. Payment can be made in cash or by QR code (banking application) at the end of the
+consultation. It is important to know that most insurance companies offer partial reimbursement of the fees, so please
+do not hesitate to get in touch with yours.
 
 <br>
 
@@ -33,7 +33,7 @@ don't hesitate to get in touch with yours.
 
 The practice is accessible by
 
--   Bus : Stop "Kurth" (bus 66) or stop "Conscience" (buses 66, 65 et 66)
+-   Bus : Stop "Kurth" (bus 66) or stop "Conscience" (buses 65 et 66)
 -   Train: Evere station is a 2-minute walk away
 -   Car: E40 and Ring nearby, blue zone disc parking (two hours free) can be found Rue J. B. Mosselmans
 
@@ -41,7 +41,7 @@ The practice is accessible by
 
 <h2 class="fs-500">Contacting me</h2>
 
-I'm available on [0474/92.25.32](tel:0474922532) (Call/SMS/Whatsapp) or by email at
+I'm available on [0488/34.33.10](tel:0488343310) (Call/SMS/Whatsapp) or by email at
 [psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com).
 
-Don't hesitate to contact me if you have any question.
+Do not hesitate to contact me if you have any question. I will get back to you within 24 working hours.

@@ -17,7 +17,7 @@ cognitive therapy (MBCT), ACT therapy, metacognitive therapy and transdiagnostic
 
 ## In practice
 
-Each session lasts **one hour** and can be conducted in French or English. It is advisable to begin therapy with
+Each session lasts **50 minutes** and can be conducted in French or English. It is advisable to begin therapy with
 weekly sessions, subsequently adjusting the frequency based on your needs.
 
 ## Difficulties treated include
@@ -25,12 +25,10 @@ weekly sessions, subsequently adjusting the frequency based on your needs.
 -   Anxiety (panic attack, panic disorder, social anxiety, generalized anxiety, agoraphobia, specific phobia, etc.)
 -   Obsessive compulsive disorder (OCD)
 -   Stress management (e.g. at school or university)
--   Professional or parental burnout
+-   Professional burnout
 -   Management of mental ruminations (anxious anticipations or preoccupations, depressive ruminations)
 -   Perfectionism
--   Post-traumatic stress
--   Mood disorders (chronic fatigue, depression, etc.)
+-   Mood disorders (depression, chronic fatigue, etc.)
 -   Self-confidence and assertiveness
--   Eating disorders (anorexia nervosa, bulimia, hyperphagia)
 
 [Book an appointment](/en/appointment)

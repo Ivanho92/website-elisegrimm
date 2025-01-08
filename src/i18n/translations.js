@@ -32,8 +32,8 @@ export const translations = {
         "maps.lat": 50.869,
         "maps.lng": 4.398,
 
-        "contact.phone.link": "0474922532",
-        "contact.phone.text": "0474/92.25.32",
+        "contact.phone.link": "0488343310",
+        "contact.phone.text": "0488/34.33.10",
         "contact.email": "psychologue.elisegrimm@gmail.com",
 
         "about.picture.alt":
@@ -73,8 +73,8 @@ export const translations = {
         "maps.lat": 50.869,
         "maps.lng": 4.398,
 
-        "contact.phone.link": "0474922532",
-        "contact.phone.text": "0474/92.25.32",
+        "contact.phone.link": "0488343310",
+        "contact.phone.text": "0488/34.33.10",
         "contact.email": "psychologue.elisegrimm@gmail.com",
 
         "about.picture.alt":

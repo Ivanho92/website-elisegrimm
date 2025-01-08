@@ -23,7 +23,7 @@ importantMessage: |
 
 <h2 class="fs-500">Honoraires</h2>
 
-Une consultation revient à **60 euros**. Le paiement peut se faire en liquide ou par code QR (application bancaire) à
+Une consultation revient à **65 euros**. Le paiement peut se faire en liquide ou par code QR (application bancaire) à
 la fin de la consultation. Il est important de savoir que certaines mutuelles proposent un remboursement partiel des
 honoraires, n'hésitez pas à prendre contact avec la vôtre.
 
@@ -33,7 +33,7 @@ honoraires, n'hésitez pas à prendre contact avec la vôtre.
 
 Le cabinet est accessible par:
 
--   Bus : Arrêt "Kurth" (bus 66) ou arrêt "Conscience" (bus 66, 65 et 66)
+-   Bus : Arrêt "Kurth" (bus 66) ou arrêt "Conscience" (bus 65 et 66)
 -   Train : Gare d'Evere à 2 minutes à pied
 -   Voiture : E40 et Ring à proximité, parking zone bleue à disque (deux heures gratuites) Rue J. B. Mosselmans
 
@@ -41,7 +41,7 @@ Le cabinet est accessible par:
 
 <h2 class="fs-500">Me contacter</h2>
 
-Je suis disponible au [0474/92.25.32](tel:0474922532) (Appel/SMS/Whatsapp) ou par mail à
+Je suis disponible au [0488/34.33.10](tel:0488343310) (Appel/SMS/Whatsapp) ou par mail à
 [psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com).
 
-N'hésitez pas à me contacter pour toute éventuelle question.
+N'hésitez pas à me contacter pour toute éventuelle question. Je veille à vous répondre dans les 24h ouvrables.
