@@ -14,21 +14,44 @@ const {
     coverImage,
     id: pageID,
     importantMessage,
+    localisation1,
+    localisation2
 } = Astro.props.frontmatter;
+
+const map1ApiId = import.meta.env.MAP1_ID;
+const streetName1 = t("maps.street1");
+const lat1 = t("maps.coord1.lat");
+const lng1 = t("maps.coord1.lng");
+
+const map2ApiId = import.meta.env.MAP2_ID;
+const streetName2 = t("maps.street2");
+const lat2 = t("maps.coord2.lat");
+const lng2 = t("maps.coord2.lng");
 ---
 
 <BaseLayout title={`Elise Grimm - ${t(`${pageID}`)}`}>
     <CoverImage title={title} background-image={coverImage} class="clr-white" />
     <main
-        class="wrapper section"
+        class="wrapper section flow"
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
     >
-        <div class="map-container">
-            <div class="flow">
-                <slot />
+        <div>
+            <slot />
+        </div>
+
+        <div class="even-columns" style="--grid-column-gap: var(--space-md)">
+            <div class="flow card">
+                <p>Localisation 1</p>
+                <GoogleMaps id="map1" mapApiId={map1ApiId} lat={lat1} lng={lng1} streetName={streetName1} />
+                <Fragment set:html={localisation1} />
             </div>
-            <GoogleMaps />
+
+            <div class="flow card">
+                <p>Localisation 2</p>
+                <GoogleMaps id="map2" mapApiId={map2ApiId} lat={lat2} lng={lng2} streetName={streetName2} />
+                <Fragment set:html={localisation2} />
+            </div>
         </div>
 
         <div class="[ important-message ] [ bg-lightest box-shadow mt-xl ]">
@@ -39,15 +62,6 @@ const {
 
 <style lang="scss">
     @use "@styles/abstracts" as *;
-
-    .map-container {
-        display: grid;
-        gap: var(--space-md);
-
-        @media (min-width: $breakpoint-medium) {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
 
     .important-message {
         border-radius: 13px;

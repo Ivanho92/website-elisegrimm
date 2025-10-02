@@ -12,6 +12,8 @@ interface Props {
     icon: string;
     text: string;
     link: string;
+    text2?: string;
+    link2?: string;
     openInNewTab?: boolean;
 }
 
@@ -19,9 +21,11 @@ const {
     class: className,
     category,
     icon,
-    link,
-    openInNewTab = false,
     text,
+    link,
+    text2,
+    link2,
+    openInNewTab = false,
 } = Astro.props;
 ---
 
@@ -34,10 +38,24 @@ const {
                 class="clr-primary-shade"
                 href={link}
                 target={openInNewTab ? "_blank" : ""}
-                aria-label={category + ': ' + text}
-            >
-                {text}
-            </a>
+                aria-label={category + ": " + text}>{text}</a
+            >{
+                text2 && link2 ? (
+                    <>
+                        <>
+                            <span>, </span>
+                            <a
+                                class="clr-primary-shade"
+                                href={link2}
+                                target={openInNewTab ? "_blank" : ""}
+                                aria-label={category + ": " + text2}
+                            >
+                                {text2}
+                            </a>
+                        </>
+                    </>
+                ) : null
+            }
         </p>
     </div>
 </div>

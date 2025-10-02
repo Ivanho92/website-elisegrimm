@@ -14,8 +14,10 @@ export const translations = {
         "header.phone": "Téléphone",
         "header.email": "Email",
         "header.schedule": "Localisation",
-        "header.location.text": "1140 Evere",
-        "header.location.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
+        "header.location1.text": "1140 Evere",
+        "header.location1.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
+        "header.location2.text": "1030 Schaerbeek",
+        "header.location2.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
         "header.showdetails": "Coordonnées de contact",
         "header.gotohomepage": "Accéder à la page d'accueil",
 
@@ -28,9 +30,12 @@ export const translations = {
         "footer.by": "par",
         "footer.rights": "Tous droits réservés",
 
-        "maps.street": "Rue Godefroid Kurth 73 - 1140 Evere",
-        "maps.lat": 50.869,
-        "maps.lng": 4.398,
+        "maps.street1": "Rue Godefroid Kurth 73 - 1140 Evere",
+        "maps.coord1.lat": 50.869,
+        "maps.coord1.lng": 4.398,
+        "maps.street2": "Rue XXX",
+        "maps.coord2.lat": 50.869,
+        "maps.coord2.lng": 4.398,
 
         "contact.phone.link": "0488343310",
         "contact.phone.text": "0488/34.33.10",

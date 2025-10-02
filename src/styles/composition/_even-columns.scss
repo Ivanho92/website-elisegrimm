@@ -9,7 +9,7 @@
     row-gap: var(--grid-row-gap, var(--grid-gap, var(--space-xl, 1rem)));
     column-gap: var(--grid-column-gap, var(--grid-gap, var(--space-xl, 1rem)));
 
-    @media (max-width: $breakpoint-medium) {
+    @media (max-width: $breakpoint-small) {
         grid-auto-flow: row;
     }
 }

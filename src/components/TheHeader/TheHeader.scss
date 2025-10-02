@@ -3,11 +3,7 @@
 .header {
     --section-padding: var(--space-md);
 
-    //a:not(.button) {
-    //    color: currentColor;
-    //}
-
-    box-shadow: 0px 1px 6px 0px rgb(30 77 74 / 20%);
+    box-shadow: 0 1px 6px 0 rgb(30 77 74 / 20%);
 
     details {
         cursor: pointer;
@@ -24,7 +20,7 @@
         }
         100% {
             opacity: 1;
-            margin-left: 0px;
+            margin-left: 0;
         }
     }
 
@@ -45,7 +41,7 @@
         display: none;
     }
 
-    @media (max-width: $breakpoint-medium) {
+    @media (max-width: $breakpoint-small) {
         & .language-picker {
             display: none;
         }

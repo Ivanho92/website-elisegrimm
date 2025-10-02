@@ -12,30 +12,50 @@ importantMessage: |
         Dans le cas contraire, le règlement de la consultation sera demandé. 
         Je vous remercie pour votre compréhension.
     </p>
+
+localisation1: |
+    <p>
+        <h2 class="fs-500">Honoraires</h2>
+
+        Une consultation revient à <strong>65 euros</strong>. Le paiement peut se faire en liquide ou par code QR (application bancaire) à
+        la fin de la consultation. Il est important de savoir que certaines mutuelles proposent un remboursement partiel des
+        honoraires, n'hésitez pas à prendre contact avec la vôtre.
+        
+        <br>
+        
+        <h2 class="fs-500">Accès</h2>
+        
+        Le cabinet est accessible par:
+        
+        -   Bus : Arrêt "Kurth" (bus 66) ou arrêt "Conscience" (bus 65 et 66)
+        -   Train : Gare d'Evere à 2 minutes à pied
+        -   Voiture : E40 et Ring à proximité, parking zone bleue à disque (deux heures gratuites) Rue J. B. Mosselmans
+    </p>
+
+localisation2: |
+    <p>
+        <h2 class="fs-500">Honoraires</h2>
+
+        Une consultation revient à <strong>65 euros</strong>. Le paiement peut se faire en liquide ou par code QR (application bancaire) à
+        la fin de la consultation. Il est important de savoir que certaines mutuelles proposent un remboursement partiel des
+        honoraires, n'hésitez pas à prendre contact avec la vôtre.
+
+        <br>
+
+        <h2 class="fs-500">Accès</h2>
+
+        Le cabinet est accessible par:
+
+        -   Bus : Arrêt "Kurth" (bus 66) ou arrêt "Conscience" (bus 65 et 66)
+        -   Train : Gare d'Evere à 2 minutes à pied
+        -   Voiture : E40 et Ring à proximité, parking zone bleue à disque (deux heures gratuites) Rue J. B. Mosselmans
+    </p>
 ---
 
 <h2 class="fs-500">Lieu et horaires des consultations</h2>
 
 -   Consultations en présentiel (le lundi après-midi et soirée) - <a href="https://maps.app.goo.gl/ZiPnN6xyHavBY6do9" target="_blank" />73 rue G. Kurth, B-1140 Bruxelles (Evere)</a>
 -   Consultations en distanciel - <a href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a>
-
-<br>
-
-<h2 class="fs-500">Honoraires</h2>
-
-Une consultation revient à **65 euros**. Le paiement peut se faire en liquide ou par code QR (application bancaire) à
-la fin de la consultation. Il est important de savoir que certaines mutuelles proposent un remboursement partiel des
-honoraires, n'hésitez pas à prendre contact avec la vôtre.
-
-<br>
-
-<h2 class="fs-500">Accès</h2>
-
-Le cabinet est accessible par:
-
--   Bus : Arrêt "Kurth" (bus 66) ou arrêt "Conscience" (bus 65 et 66)
--   Train : Gare d'Evere à 2 minutes à pied
--   Voiture : E40 et Ring à proximité, parking zone bleue à disque (deux heures gratuites) Rue J. B. Mosselmans
 
 <br>
 
