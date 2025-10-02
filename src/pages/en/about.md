@@ -6,7 +6,11 @@ title: About me
 coverImage: banner-taninges.png
 ---
 
-As a Doctor in Psychology, Certified Clinical Psychologist and Psychotherapist, I specialise in the treatment of emotional disorders. Trained mainly in cognitive-behavioural psychotherapy, I incorporate tools from mindfulness therapy, acceptance and commitment therapy (ACT therapy) and transdiagnostic therapy. In September 2024, I also completed my doctorate in psychology at UCLouvain, which focused on the role of cognitive, emotional, and behavioural factors in stress regulation. I also supervised practical courses in clinical psychology for the Psychology bachelor's and master's degrees at UCLouvain. In addition to stress, I have a wide range of research interests, including cognitive flexibility, alexithymia, and sexual disorders.
+As a Doctor in Psychology, Certified Clinical Psychologist and Psychotherapist, I specialize in the treatment of emotional disorders. Trained mainly in cognitive-behavioural psychotherapy, I incorporate tools from mindfulness-based cognitive therapy (MBCT), ACT therapy, metacognitive therapy, transdiagnostic therapy, and dialectical behavioral therapy (DBT). My practice is anchored in a larger person-centered approach. 
+
+Alongside my clinical practice, I am a researcher at Sciensano, where I focus on health promotion and prevention projects based on physical activity, mental health, and nutrition. I also supervise end-of-year projects for first- and final-year students in the postgraduate psychotherapy program at UCLouvain's Integrated Psychotherapy Clinics. 
+
+In September 2024, I completed my doctorate in psychology at UCLouvain, which focused on the role of cognitive, emotional, and behavioural factors in stress regulation. I also supervised practical courses in clinical psychology for the Psychology bachelor's and master's degrees at UCLouvain. In addition to stress, mental health and physical activity, I have a wide range of research interests, including cognitive flexibility, alexithymia, and sexual disorders.
 
 ## Background
 
@@ -28,7 +32,7 @@ As a Doctor in Psychology, Certified Clinical Psychologist and Psychotherapist, 
 ## For further information
 
 <ul>
-    <li><a href="https://www.compsy.be/en/profile/public-profile/21464" target="_blank">Compsy</a></li>
+    <li><a href="https://www.compsy.be/en_GB/psychologist/10845" target="_blank">Compsy</a></li>
     <li><a href="https://www.linkedin.com/in/elisembgrimm/" target="_blank">Linkedin</a></li>
     <li><a href="https://www.researchgate.net/profile/Elise-Grimm-2/research" target="_blank">ResearchGate</a></li>
 </ul>

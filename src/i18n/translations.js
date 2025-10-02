@@ -16,8 +16,8 @@ export const translations = {
         "header.schedule": "Localisation",
         "header.location1.text": "1140 Evere",
         "header.location1.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
-        "header.location2.text": "1030 Schaerbeek",
-        "header.location2.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
+        "header.location2.text": "1325 Chaumont-Gistoux",
+        "header.location2.maps": "https://maps.app.goo.gl/zExM1F5uy2p5GN5v6",
         "header.showdetails": "Coordonnées de contact",
         "header.gotohomepage": "Accéder à la page d'accueil",
 
