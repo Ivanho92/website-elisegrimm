@@ -43,8 +43,8 @@ localisation2: |
         <p>Le cabinet est accessible par:</p>
 
         <ul>
-            <li>Voiture : via l’E411 et la N25, parking gratuit</li>
             <li>Bus : arrêt « CHAUMONT-GISTOUX Village » (bus 543)</li>
+            <li>Voiture : via l’E411 et la N25, parking gratuit</li>
         </ul>
     </div>
 ---

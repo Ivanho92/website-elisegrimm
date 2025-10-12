@@ -24,7 +24,7 @@ export const translations = {
         "header.gotohomepage": "Accéder à la page d'accueil",
 
         "homepage.fullname": "Elise Grimm",
-        "homepage.jobtitle": "Psychologue Clinicienne & Psychothérapeute",
+        "homepage.jobtitle": "Docteure en Psychologie, Psychologue Clinicienne & Psychothérapeute",
 
         "cta.appointment": "Prendre Rendez-vous",
         "cta.therapy": "Thérapie",
@@ -71,7 +71,7 @@ export const translations = {
         "header.gotohomepage": "Go to homepage",
 
         "homepage.fullname": "Elise Grimm",
-        "homepage.jobtitle": "Clinical Psychologist & Psychotherapist",
+        "homepage.jobtitle": "PhD in Psychology, Clinical Psychologist & Psychotherapist",
 
         "cta.appointment": "Book Appointment",
         "cta.therapy": "Therapy",

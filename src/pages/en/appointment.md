@@ -27,7 +27,7 @@ localisation1: |
       <ul>
         <li>Bus: Stop "Kurth" (bus 66) or stop "Conscience" (buses 65 et 66)</li>
         <li>Train: Evere station is a 2-minute walk</li>
-        <li>E40 and Ring nearby, blue zone disc parking (two hours free) can be found Rue J. B. Mosselmans</li>
+        <li>Car: E40 and Ring nearby, blue zone disc parking (two hours free) can be found Rue J. B. Mosselmans</li>
       </ul>
     </div>
 
@@ -43,8 +43,8 @@ localisation2: |
         <p>The practice is accessible by:</p>
 
         <ul>
+            <li>Bus: Stop "CHAUMONT-GISTOUX Village" (bus 543)</li>
             <li>Car: E411 and N25, free parking</li>
-            <li>Bus : Stop "CHAUMONT-GISTOUX Village" (bus 543)</li>
         </ul>
     </div>
 ---
@@ -58,4 +58,4 @@ A consultation costs **65 euros**. Payment can be made in cash or by QR code (ba
 I am available on [0488/34.33.10](tel:0488343310) (Call/SMS/Whatsapp) or by email at
 [psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com). Please leave me a message indicating the <b>location</b> (Evere, Chaumont-Gistoux or online) where you would like to have a consultation, your <b>preferred availability</b>, and a few words about <b>how I can help you</b>.
 
-Do not hesitate to contact me if you have any questions. I will get back to you as soon sa possible.
+Do not hesitate to contact me if you have any questions. I will get back to you as soon as possible.
