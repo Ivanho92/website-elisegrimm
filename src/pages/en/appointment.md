@@ -32,17 +32,21 @@ localisation1: |
     </div>
 
 localisation2: |
-    <p>
-        -  In-person consultations (Wednesday): <a href="https://maps.app.goo.gl/zExM1F5uy2p5GN5v6" target="_blank" />Fyki Sports, Rue Inchebroux 1C, 1325 Chaumont-Gistoux</a>
-        <br> -   Videoconference consultations: <a href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a>
+    <ul>
+        <li>In-person consultations (Wednesday): <a class="no-wrap" href="https://maps.app.goo.gl/zExM1F5uy2p5GN5v6" target="_blank" />Fyki Sports, Rue Inchebroux 1C, 1325 Chaumont-Gistoux</a></li>
+        <li>Videoconference consultations: <a class="no-wrap" href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a></li>
+    </ul>
 
-        <h2 class="fs-500">Access</h2>
+    <div class="mt-md">
+        <h4 class="fs-400">Access</h4>
 
-        The practice is accessible by:
+        <p>The practice is accessible by:</p>
 
-        <br>-   Car: E411 and N25, free parking
-        <br>-   Bus : Stop "CHAUMONT-GISTOUX Village" (bus 543)
-    </p>
+        <ul>
+            <li>Car: E411 and N25, free parking</li>
+            <li>Bus : Stop "CHAUMONT-GISTOUX Village" (bus 543)</li>
+        </ul>
+    </div>
 ---
 
 <h2>Price</h2>
@@ -52,6 +56,6 @@ A consultation costs **65 euros**. Payment can be made in cash or by QR code (ba
 <h2>Contacting me</h2>
 
 I am available on [0488/34.33.10](tel:0488343310) (Call/SMS/Whatsapp) or by email at
-[psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com). Please leave me a message indicating the <b>location</b> (Evere, Chaumont-Gistoux or online) where you would like to have your consultation, your <b>preferred availability</b>, and a few words about <b>how I can help you</b>.
+[psychologue.elisegrimm@gmail.com](mailto:psychologue.elisegrimm@gmail.com). Please leave me a message indicating the <b>location</b> (Evere, Chaumont-Gistoux or online) where you would like to have a consultation, your <b>preferred availability</b>, and a few words about <b>how I can help you</b>.
 
 Do not hesitate to contact me if you have any questions. I will get back to you as soon sa possible.

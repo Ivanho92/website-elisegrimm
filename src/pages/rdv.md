@@ -14,41 +14,47 @@ importantMessage: |
     </p>
 
 localisation1: |
-    <p>      
-        -   Consultations en présentiel (le lundi après-midi) : <a href="https://maps.app.goo.gl/ZiPnN6xyHavBY6do9" target="_blank" />73 rue G. Kurth, B-1140 Bruxelles (Evere)</a>
-        <br> -   Consultations en distanciel : <a href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a>
+    <ul>      
+        <li>Consultations en présentiel (le lundi après-midi) : <a class="no-wrap" href="https://maps.app.goo.gl/ZiPnN6xyHavBY6do9" target="_blank" />73 rue G. Kurth, B-1140 Bruxelles (Evere)</a></li>
+        <li>Consultations en distanciel : <a class="no-wrap" href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a></li>
+    </ul>
 
-        <h2 class="fs-500">Accès</h2>
+    <div class="mt-md">
+        <h4 class="fs-400">Accès</h4>
         
-        Le cabinet est accessible par:
+        <p>Le cabinet est accessible par:</p>
         
-        <br> -   Bus : Arrêt "Kurth" (bus 66) ou arrêt "Conscience" (bus 65 et 66)
-        <br>-   Train : Gare d'Evere à 2 minutes à pied
-        <br>-   Voiture : E40 et Ring à proximité, parking zone bleue à disque (deux heures gratuites) Rue J. B. Mosselmans
-    </p>
+        <ul>
+            <li>Bus : Arrêt "Kurth" ou arrêt "Conscience" (bus 65 et 66)</li>
+            <li>Train : Gare d'Evere à 2 minutes à pied</li>
+            <li>Voiture : E40 et Ring à proximité, parking zone bleue à disque (deux heures gratuites) Rue J. B. Mosselmans</li>
+        </ul>
+    </div>
 
 localisation2: |
-    <p>
-        - Consultations en présentiel (le mercredi) : <a href="https://maps.app.goo.gl/zExM1F5uy2p5GN5v6" target="_blank" />Fyki Sports, Rue Inchebroux 1C, 1325 Chaumont-Gistoux</a>
-        - Consultations en distanciel : <a href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a>
+    <ul>
+        <li>Consultations en présentiel (le mercredi) : <a class="no-wrap" href="https://maps.app.goo.gl/zExM1F5uy2p5GN5v6" target="_blank" />Fyki Sports, Rue Inchebroux 1C, 1325 Chaumont-Gistoux</a></li>
+        <li>Consultations en distanciel : <a class="no-wrap"  href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a></li>
+    </ul>
 
-        <h2 class="fs-500">Accès</h2>
+    <div class="mt-md">
+        <h4 class="fs-400">Accès</h4>
 
-        Le cabinet est accessible par:
+        <p>Le cabinet est accessible par:</p>
 
-        <br>-   Voiture : via l’E411 et la N25, parking gratuit
-        <br>-   Bus : arrêt « CHAUMONT-GISTOUX Village » (bus 543)
-    </p>
+        <ul>
+            <li>Voiture : via l’E411 et la N25, parking gratuit</li>
+            <li>Bus : arrêt « CHAUMONT-GISTOUX Village » (bus 543)</li>
+        </ul>
+    </div>
 ---
 
-<h2 class="fs-500">Honoraires</h2>
+<h2>Honoraires</h2>
 
 Une consultation revient à <strong>65 euros</strong>. Le paiement peut se faire en liquide ou par code QR (application bancaire) à la fin de la consultation. Il est important de savoir que certaines mutuelles proposent un remboursement partiel des honoraires, n'hésitez pas à prendre contact avec la vôtre. 
 
-<br>
+<h2>Me contacter</h2>
 
-<h2 class="fs-500">Me contacter</h2>
-
-Je suis disponible au <a href="tel:0488343310">0488/34.33.10</a> (Appel/SMS/Whatsapp) ou par mail à <a href="mailto:psychologue.elisegrimm@gmail.com">psychologue.elisegrimm@gmail.com</a>.  Merci de me laisser un message en précisant le <b>lieu</b> où vous souhaiteriez avoir votre consultation (Evere,  Chaumont-Gistoux ou en visioconférence), vos <b>disponibilités</b> ainsi que quelques mots sur <b>la manière dont je peux vous aider</b>.
+Je suis disponible au <a href="tel:0488343310">0488/34.33.10</a> (Appel/SMS/Whatsapp) ou par mail à <a href="mailto:psychologue.elisegrimm@gmail.com">psychologue.elisegrimm@gmail.com</a>.  Merci de me laisser un message en précisant le <b>lieu</b> où vous souhaiteriez avoir une consultation (Evere,  Chaumont-Gistoux ou en visioconférence), vos <b>disponibilités</b> ainsi que quelques mots sur <b>la manière dont je peux vous aider</b>.
 
 N'hésitez pas à me contacter pour toute éventuelle question et je vous répondrai dès que possible.
