@@ -22,11 +22,13 @@ const map1ApiId = import.meta.env.MAP1_ID;
 const streetName1 = t("maps.street1");
 const lat1 = t("maps.coord1.lat");
 const lng1 = t("maps.coord1.lng");
+const commune1 = t("header.location1.commune");
 
 const map2ApiId = import.meta.env.MAP2_ID;
 const streetName2 = t("maps.street2");
 const lat2 = t("maps.coord2.lat");
 const lng2 = t("maps.coord2.lng");
+const commune2 = t("header.location2.commune");
 ---
 
 <BaseLayout title={`Elise Grimm - ${t(`${pageID}`)}`}>
@@ -36,25 +38,25 @@ const lng2 = t("maps.coord2.lng");
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
     >
-        <div>
+        <div class="flow">
             <slot />
         </div>
 
-        <div class="even-columns" style="--grid-column-gap: var(--space-md)">
+        <div class="even-columns mt-xl" style="--grid-column-gap: var(--space-md)">
             <div class="flow card">
-                <p>Localisation 1</p>
+                <h3 class="fs-600">{commune1}</h3>
                 <GoogleMaps id="map1" mapApiId={map1ApiId} lat={lat1} lng={lng1} streetName={streetName1} />
                 <Fragment set:html={localisation1} />
             </div>
 
             <div class="flow card">
-                <p>Localisation 2</p>
+                <h3 class="fs-600">{commune2}</h3>
                 <GoogleMaps id="map2" mapApiId={map2ApiId} lat={lat2} lng={lng2} streetName={streetName2} />
                 <Fragment set:html={localisation2} />
             </div>
         </div>
 
-        <div class="[ important-message ] [ bg-lightest box-shadow mt-xl ]">
+        <div class="[ important-message ] [ bg-lightest box-shadow mt-lg ]">
             <Fragment set:html={importantMessage} />
         </div>
     </main>
