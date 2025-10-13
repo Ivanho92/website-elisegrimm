@@ -7,12 +7,12 @@ import {
 
 export function getLocaleFromUrl(url: URL) {
     const [, lang] = url.pathname.split("/");
-    if (lang in translations) return lang as keyof typeof translations;
+    if (lang in translations) return lang;
     return defaultLocale;
 }
 
 export function useTranslations(lang: keyof typeof translations) {
-    return function t(key: string): string {
+    return function t(key: string) {
         return translations[lang][key] ?? translations[defaultLocale][key];
     };
 }
@@ -20,10 +20,7 @@ export function useTranslations(lang: keyof typeof translations) {
 export function useTranslatedPath(lang: keyof typeof translations) {
     return function translatePath(path: string, l: string = lang) {
         const pathName = path.replaceAll("/", "");
-        const hasTranslation =
-            defaultLocale !== l &&
-            routes[l] !== undefined &&
-            routes[l][pathName] !== undefined;
+        const hasTranslation = defaultLocale !== l && routes[l]?.[pathName];
         const translatedPath = hasTranslation
             ? "/" + routes[l][pathName]
             : path;
@@ -37,7 +34,7 @@ export function useTranslatedPath(lang: keyof typeof translations) {
 export function getRouteFromUrl(url: URL): string | undefined {
     const pathname = new URL(url).pathname;
     const parts = pathname?.split("/");
-    const path = parts.pop() || parts.pop();
+    const path = parts.pop();
 
     if (path === undefined) {
         return undefined;
@@ -47,7 +44,7 @@ export function getRouteFromUrl(url: URL): string | undefined {
 
     if (defaultLocale === currentLocale) {
         const route = Object.values(routes)[0];
-        return route[path] !== undefined ? route[path] : undefined;
+        return route[path];
     }
 
     const getKeyByValue = (

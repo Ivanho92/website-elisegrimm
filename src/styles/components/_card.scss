@@ -1,0 +1,8 @@
+@use "@styles/abstracts" as *;
+
+.card {
+    font-size: 0.9em;
+    padding: var(--space-md);
+    border: 1px solid var(--clr-light-neutral);
+    border-radius: 10px;
+}

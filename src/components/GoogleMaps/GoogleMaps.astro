@@ -1,32 +1,25 @@
 ---
-// Composables
-import {getLocaleFromUrl, useTranslations} from "@i18n/utils";
-
-// JavaScript
-const t = useTranslations(getLocaleFromUrl(Astro.url));
-
 // Environment Variables
 const API_KEY = import.meta.env.GOOGLEMAPS_APIKEY;
-const MAP_ID = import.meta.env.MAP_ID;
-const streetName = t("maps.street");
-const lat = t("maps.lat");
-const lng = t("maps.lng");
+
+// Inputs
+const { id, lat, lng, streetName, mapApiId } = Astro.props;
 ---
 
-<div id="map"></div>
+<div id={id} class="map"></div>
 
 <style>
-    #map {
+    .map {
         border-radius: 10px;
         min-height: 300px;
         width: 100%;
     }
 </style>
 
-<script define:vars={{API_KEY, MAP_ID, streetName, lat, lng}}>
+<script is:inline define:vars={{API_KEY, id, lat, lng, streetName, mapApiId}}>
     // @ts-nocheck
-    const LATITUDE = lat;
-    const LONGITUDE = lng;
+    const LATITUDE = parseFloat(lat);
+    const LONGITUDE = parseFloat(lng);
 
     // prettier-ignore
     (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{(a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
@@ -43,10 +36,10 @@ const lng = t("maps.lng");
         const {AdvancedMarkerElement} =
             await google.maps.importLibrary("marker");
 
-        map = new Map(document.getElementById("map"), {
+        map = new Map(document.getElementById(id), {
             zoom: 14,
             center: position,
-            mapId: MAP_ID,
+            mapId: mapApiId,
         });
 
         new AdvancedMarkerElement({

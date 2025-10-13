@@ -37,8 +37,10 @@ const contactDetails = [
     {
         icon: "location",
         category: t("header.schedule"),
-        text: t("header.location.text"),
-        link: t("header.location.maps"),
+        text: t("header.location1.text"),
+        link: t("header.location1.maps"),
+        text2: t("header.location2.text"),
+        link2: t("header.location2.maps"),
         openInNewTab: true,
     },
 ];
@@ -73,7 +75,9 @@ const contactDetails = [
                             category={item.category}
                             icon={item.icon}
                             text={item.text}
+                            text2={item.text2}
                             link={item.link}
+                            link2={item.link2}
                             openInNewTab={item.openInNewTab}
                         />
                     ))
@@ -91,7 +95,9 @@ const contactDetails = [
                         category={item.category}
                         icon={item.icon}
                         text={item.text}
+                        text2={item.text2}
                         link={item.link}
+                        link2={item.link2}
                         openInNewTab={item.openInNewTab}
                     />
                 ))

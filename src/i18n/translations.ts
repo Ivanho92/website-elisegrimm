@@ -1,4 +1,6 @@
-export const translations = {
+type Translations = Record<string, Record<string, string>>;
+
+export const translations: Translations = {
     fr: {
         "nav.home": "Accueil",
         "nav.about": "À propos",
@@ -14,13 +16,17 @@ export const translations = {
         "header.phone": "Téléphone",
         "header.email": "Email",
         "header.schedule": "Localisation",
-        "header.location.text": "1140 Evere",
-        "header.location.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
+        "header.location1.text": "1140 Evere",
+        "header.location1.commune": "Evere",
+        "header.location1.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
+        "header.location2.text": "1325 Chaumont-Gistoux",
+        "header.location2.commune": "Chaumont-Gistoux",
+        "header.location2.maps": "https://maps.app.goo.gl/zExM1F5uy2p5GN5v6",
         "header.showdetails": "Coordonnées de contact",
         "header.gotohomepage": "Accéder à la page d'accueil",
 
         "homepage.fullname": "Elise Grimm",
-        "homepage.jobtitle": "Psychologue Clinicienne & Psychothérapeute",
+        "homepage.jobtitle": "Docteure en Psychologie, Psychologue Clinicienne & Psychothérapeute",
 
         "cta.appointment": "Prendre Rendez-vous",
         "cta.therapy": "Thérapie",
@@ -28,9 +34,12 @@ export const translations = {
         "footer.by": "par",
         "footer.rights": "Tous droits réservés",
 
-        "maps.street": "Rue Godefroid Kurth 73 - 1140 Evere",
-        "maps.lat": 50.869,
-        "maps.lng": 4.398,
+        "maps.street1": "Rue Godefroid Kurth 73 - 1140 Evere",
+        "maps.coord1.lat": "50.869",
+        "maps.coord1.lng": "4.398",
+        "maps.street2": "Rue Inchebroux 1C - 1325 Chaumont-Gistoux",
+        "maps.coord2.lat": "50.693",
+        "maps.coord2.lng": "4.694",
 
         "contact.phone.link": "0488343310",
         "contact.phone.text": "0488/34.33.10",
@@ -54,14 +63,17 @@ export const translations = {
         "header.phone": "Phone",
         "header.email": "Email",
         "header.schedule": "Location",
-        "header.location.text": "1140 Evere",
-        "header.location.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
+        "header.location1.text": "1140 Evere",
+        "header.location1.commune": "Evere",
+        "header.location1.maps": "https://maps.app.goo.gl/ZiPnN6xyHavBY6do9",
+        "header.location2.text": "1325 Chaumont-Gistoux",
+        "header.location2.commune": "Chaumont-Gistoux",
+        "header.location2.maps": "https://maps.app.goo.gl/zExM1F5uy2p5GN5v6",
         "header.showdetails": "Contact details",
         "header.gotohomepage": "Go to homepage",
 
-
         "homepage.fullname": "Elise Grimm",
-        "homepage.jobtitle": "Clinical Psychologist & Psychotherapist",
+        "homepage.jobtitle": "PhD in Psychology, Clinical Psychologist & Psychotherapist",
 
         "cta.appointment": "Book Appointment",
         "cta.therapy": "Therapy",
@@ -69,9 +81,12 @@ export const translations = {
         "footer.by": "by",
         "footer.rights": "All rights reserved",
 
-        "maps.street": "Rue Godefroid Kurth 73 - 1140 Evere",
-        "maps.lat": 50.869,
-        "maps.lng": 4.398,
+        "maps.street1": "Rue Godefroid Kurth 73 - 1140 Evere",
+        "maps.coord1.lat": "50.869",
+        "maps.coord1.lng": "4.398",
+        "maps.street2": "Rue Inchebroux 1C - 1325 Chaumont-Gistoux",
+        "maps.coord2.lat": "50.693",
+        "maps.coord2.lng": "4.694",
 
         "contact.phone.link": "0488343310",
         "contact.phone.text": "0488/34.33.10",
