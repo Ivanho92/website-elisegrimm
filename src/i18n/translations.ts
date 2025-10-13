@@ -1,4 +1,6 @@
-export const translations = {
+type Translations = Record<string, Record<string, string>>;
+
+export const translations: Translations = {
     fr: {
         "nav.home": "Accueil",
         "nav.about": "À propos",
@@ -33,11 +35,11 @@ export const translations = {
         "footer.rights": "Tous droits réservés",
 
         "maps.street1": "Rue Godefroid Kurth 73 - 1140 Evere",
-        "maps.coord1.lat": 50.869,
-        "maps.coord1.lng": 4.398,
+        "maps.coord1.lat": "50.869",
+        "maps.coord1.lng": "4.398",
         "maps.street2": "Rue Inchebroux 1C - 1325 Chaumont-Gistoux",
-        "maps.coord2.lat": 50.693,
-        "maps.coord2.lng": 4.694,
+        "maps.coord2.lat": "50.693",
+        "maps.coord2.lng": "4.694",
 
         "contact.phone.link": "0488343310",
         "contact.phone.text": "0488/34.33.10",
@@ -80,11 +82,11 @@ export const translations = {
         "footer.rights": "All rights reserved",
 
         "maps.street1": "Rue Godefroid Kurth 73 - 1140 Evere",
-        "maps.coord1.lat": 50.869,
-        "maps.coord1.lng": 4.398,
+        "maps.coord1.lat": "50.869",
+        "maps.coord1.lng": "4.398",
         "maps.street2": "Rue Inchebroux 1C - 1325 Chaumont-Gistoux",
-        "maps.coord2.lat": 50.693,
-        "maps.coord2.lng": 4.694,
+        "maps.coord2.lat": "50.693",
+        "maps.coord2.lng": "4.694",
 
         "contact.phone.link": "0488343310",
         "contact.phone.text": "0488/34.33.10",
