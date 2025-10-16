@@ -42,7 +42,7 @@ const commune2 = t("header.location2.commune");
             <slot />
         </div>
 
-        <div class="even-columns mt-xl" style="--grid-column-gap: var(--space-md)">
+        <div class="even-columns align-items-baseline mt-xl" style="--grid-column-gap: var(--space-md)">
             <div class="flow card">
                 <h3 class="fs-600">{commune1}</h3>
                 <GoogleMaps id="map1" mapApiId={map1ApiId} lat={lat1} lng={lng1} streetName={streetName1} />

@@ -9,6 +9,10 @@
     row-gap: var(--grid-row-gap, var(--grid-gap, var(--space-xl, 1rem)));
     column-gap: var(--grid-column-gap, var(--grid-gap, var(--space-xl, 1rem)));
 
+    &.align-items-baseline {
+        align-items: baseline;
+    }
+
     @media (max-width: $breakpoint-small) {
         grid-auto-flow: row;
     }

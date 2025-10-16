@@ -15,8 +15,8 @@ importantMessage: |
 
 localisation1: |
     <ul>      
-        <li>Consultations en présentiel (le lundi après-midi) : <a class="no-wrap" href="https://maps.app.goo.gl/ZiPnN6xyHavBY6do9" target="_blank" />73 rue G. Kurth, B-1140 Bruxelles (Evere)</a></li>
-        <li>Consultations en distanciel : <a class="no-wrap" href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a></li>
+        <li>Consultations en présentiel (le lundi après-midi): <a href="https://maps.app.goo.gl/ZiPnN6xyHavBY6do9" target="_blank" />73 rue G. Kurth, B-1140 Bruxelles (Evere)</a></li>
+        <li>Consultations en distanciel: <a href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a></li>
     </ul>
 
     <div class="mt-md">
@@ -33,8 +33,8 @@ localisation1: |
 
 localisation2: |
     <ul>
-        <li>Consultations en présentiel (le mercredi) : <a class="no-wrap" href="https://maps.app.goo.gl/zExM1F5uy2p5GN5v6" target="_blank" />Fyki Sports, Rue Inchebroux 1C, 1325 Chaumont-Gistoux</a></li>
-        <li>Consultations en distanciel : <a class="no-wrap"  href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a></li>
+        <li>Consultations en présentiel (le mercredi): <a href="https://maps.app.goo.gl/zExM1F5uy2p5GN5v6" target="_blank" />Fyki Sports, Rue Inchebroux 1C, 1325 Chaumont-Gistoux</a></li>
+        <li>Consultations en distanciel: <a  href="https://whereby.com/consultations-elisegrimm" target="_blank" />whereby.com/consultations-elisegrimm</a></li>
     </ul>
 
     <div class="mt-md">
