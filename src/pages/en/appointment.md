@@ -51,7 +51,7 @@ localisation2: |
 
 <h2>Price</h2>
 
-A consultation costs **65 euros**. Payment can be made in cash or by QR code (banking application) at the end of the consultation. It is important to know that most insurance companies offer partial reimbursement of the fees, so please do not hesitate to get in touch with yours.
+A consultation costs **70 euros**. Payment can be made in cash or by QR code (banking application) at the end of the consultation. It is important to know that most insurance companies offer partial reimbursement of the fees, so please do not hesitate to get in touch with yours.
 
 <h2>Contacting me</h2>
 
