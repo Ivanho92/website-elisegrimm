@@ -51,7 +51,7 @@ localisation2: |
 
 <h2>Honoraires</h2>
 
-Une consultation revient à <strong>65 euros</strong>. Le paiement peut se faire en liquide ou par code QR (application bancaire) à la fin de la consultation. Il est important de savoir que certaines mutuelles proposent un remboursement partiel des honoraires, n'hésitez pas à prendre contact avec la vôtre. 
+Une consultation revient à <strong>70 euros</strong>. Le paiement peut se faire en liquide ou par code QR (application bancaire) à la fin de la consultation. Il est important de savoir que certaines mutuelles proposent un remboursement partiel des honoraires, n'hésitez pas à prendre contact avec la vôtre. 
 
 <h2>Me contacter</h2>
 
